@@ -1,0 +1,23 @@
+{
+    "name": "servicewell.fhir.wof-connect",
+    "version": "0.1.0",
+    "type": "IG",
+    "canonical": "http://canonical.fhir.link/servicewell/wof-connect",
+    "url": "http://canonical.fhir.link/servicewell/wof-connect/ImplementationGuide/servicewell.fhir.wof-connect",
+    "title": "WOF Connect Implementation Guide",
+    "description": "Implementation Guide for WOF Connect made by Service Well.",
+    "fhirVersions": [ "4.0.1" ],
+    "dependencies": {},
+    "keywords": [
+        "wof",
+        "connect"
+    ],
+    "author": "Service Well AB",
+    "maintainers": [
+      {
+        "name": "Service Well",
+        "email": "support@servicewell.se" 
+      }
+    ],
+    "license": "CC0-1.0"
+  }
