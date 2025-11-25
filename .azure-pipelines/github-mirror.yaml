@@ -1,0 +1,26 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+resources:
+  repositories:
+    - repository: PublishTemplate
+      name: swts/servicewell.fhir.landingzone
+      type: git
+      ref: refs/heads/main
+      endpoint: cross-project-connection
+
+
+variables:
+  - group: 'FHIR IG Secrets'
+  - name: GH_REPO_URL
+    value: 'github.com/servicewell/servicewell.fhir.wof-connect.git'
+  - name: GH_BRANCH
+    value: 'public/development'
+
+steps:
+  - template: ".azure-pipelines/ig-templates/github-mirror-template.yaml@PublishTemplate"

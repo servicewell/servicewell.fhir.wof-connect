@@ -1,0 +1,14 @@
+{
+   "package-id" : "servicewell.fhir.wof-connect",
+   "version" : "0.1.0",
+   "path" : "http://canonical.fhir.link/servicewell/wof-connect/0.1.0",
+   "mode" : "milestone",
+   "status" : "draft",
+   "sequence" : "Pre-Release",
+   "desc" : "Initial pre-release of WOF Connect IG.",
+   "first" : true,
+   "title" : "WOF Connect Implementation Guide",
+   "ci-build" : "https://build.fhir.org/ig/servicewell/servicewell.fhir.wof-connect",
+   "category" : "Infrastructure",
+   "introduction" : "Implementation Guide for WOF Connect made by Service Well."
+}
