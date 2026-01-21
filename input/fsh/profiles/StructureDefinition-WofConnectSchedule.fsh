@@ -84,6 +84,23 @@ Description: "Schedule for bookable service availability as exposed by WOF Conne
 * actor[healthcareService] insert Obligation($frendaActor, #MAY:able-to-populate)
 
 // -------------------------------------
+// Obligations: Opus (producer)
+// -------------------------------------
+
+// Opus SHALL populate 
+* actor[practitionerRole] insert Obligation($opusActor, #SHALL:populate)
+* serviceType[service-type-id].coding[st-id] insert Obligation($opusActor, #SHALL:populate)
+* serviceType[service-type-id].coding[ep-id] insert Obligation($opusActor, #SHALL:populate)
+* planningHorizon.start insert Obligation($opusActor, #SHALL:populate)
+* planningHorizon.end insert Obligation($opusActor, #SHALL:populate)
+
+// Opus SHOULD populate
+* actor[practitioner] insert Obligation($opusActor, #SHOULD:able-to-populate)
+
+// Opus MAY populate
+* actor[healthcareService] insert Obligation($opusActor, #MAY:able-to-populate)
+
+// -------------------------------------
 // Obligations: WOF (consumer/client)
 // -------------------------------------
 

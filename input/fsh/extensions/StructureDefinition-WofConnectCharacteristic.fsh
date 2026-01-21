@@ -6,9 +6,10 @@ Description: "Grouped characteristics for a HealthcareService: Scheduling, API a
 * ^status = #active
 
 // Var extensionen får sitta
-* ^context.type = #element
-* ^context.expression = "HealthcareService"
-
+* ^context[0].type = #element
+* ^context[0].expression = "HealthcareService"
+* ^context[1].type = #element
+* ^context[1].expression = "Appointment"
 
 * value[x] 0..0
 * extension 1..*
@@ -22,12 +23,34 @@ Description: "Grouped characteristics for a HealthcareService: Scheduling, API a
 * extension[scheduling].extension 0..*
 
 * extension[scheduling].extension contains
-    childPatientThreshold  0..1
+    childPatientThreshold  0..1 and
+    minChangeHours 0..1 and
+    webReschedulingCountAllowed 0..1 and
+    schedulingAvailability 0..1
 
+// childPatientThreshold
+* extension[scheduling].extension[childPatientThreshold].value[x] only integer
 * extension[scheduling].extension[childPatientThreshold].valueInteger 0..1
 * extension[scheduling].extension[childPatientThreshold].valueInteger ^short = "Upper age limit (in years) for booking as a child patient."
 * extension[scheduling].extension[childPatientThreshold].valueInteger ^minValueInteger = 0
 * extension[scheduling].extension[childPatientThreshold].valueInteger ^maxValueInteger = 100
+
+// minChangeHours
+* extension[scheduling].extension[minChangeHours].value[x] only integer
+* extension[scheduling].extension[minChangeHours].valueInteger 0..1
+* extension[scheduling].extension[minChangeHours].valueInteger ^short = "Number of hours before appointment start after which changes are no longer allowed."
+
+// webReschedulingCountAllowed
+* extension[scheduling].extension[webReschedulingCountAllowed].value[x] only integer
+* extension[scheduling].extension[webReschedulingCountAllowed].valueInteger 0..1
+* extension[scheduling].extension[webReschedulingCountAllowed].valueInteger ^short = "Number of allowed reschedulings for this appointment."
+
+// schedulingAvailability as CodeableConcept (e.g. isCancellationAvailable and isCancellationAvailable)
+* extension[scheduling].extension[schedulingAvailability].value[x] only CodeableConcept
+* extension[scheduling].extension[schedulingAvailability].valueCodeableConcept 1..1
+* extension[scheduling].extension[schedulingAvailability].valueCodeableConcept ^short = "Clinic-level scheduling capabilities, such as cancellation and rescheduling availability."
+* extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.system 1..1
+* extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.system = "http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/wc-characteristic" (exactly)
 
 // ----- Workflow -----
 * extension[workflow].extension 0..*

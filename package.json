@@ -1,6 +1,6 @@
 {
     "name": "servicewell.fhir.wof-connect",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "IG",
     "canonical": "http://canonical.fhir.link/servicewell/wof-connect",
     "url": "http://canonical.fhir.link/servicewell/wof-connect/ImplementationGuide/servicewell.fhir.wof-connect",
