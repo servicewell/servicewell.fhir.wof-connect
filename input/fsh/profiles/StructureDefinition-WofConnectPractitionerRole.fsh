@@ -1,3 +1,5 @@
+Alias: $serverActor = https://serverActor.example.se
+
 Profile: WofConnectPractitionerRole
 Parent: PractitionerRole
 Id: wof-connect-practitionerrole
@@ -42,52 +44,15 @@ Description: "PractitionerRole as exposed by WOF Connect integrations."
 
 * code 1..* MS
 
-// -------------------------------------
-// Obligations: Frenda (producer)
-// -------------------------------------
+* active insert Obligation($serverActor, #SHALL:populate)
+* period insert Obligation($serverActor, #SHALL:populate)
+* practitioner insert Obligation($serverActor, #SHALL:populate)        
+* healthcareService insert Obligation($serverActor, #SHOULD:populate)  
+* endpoint insert Obligation($serverActor, #SHALL:populate)           
 
-// Frenda SHALL populate 
-* active insert Obligation($frendaActor, #SHALL:populate)
-* period insert Obligation($frendaActor, #SHALL:populate)
-* practitioner insert Obligation($frendaActor, #SHALL:populate)         // Treater for Frenda
-* healthcareService insert Obligation($frendaActor, #SHALL:populate)    // 1..1 for Frenda/Clinic
-* endpoint insert Obligation($frendaActor, #SHALL:populate)             // TODO: SHALL correct?
+* organization insert Obligation($serverActor, #MAY:populate)       
+* code insert Obligation($serverActor, #MAY:populate)   
 
-// Frenda MAY populate
-* organization insert Obligation($frendaActor, #MAY:populate)           // CostLocation for Frenda
-* code insert Obligation($frendaActor, #MAY:populate)                   // TODO: MAY correct?
-
-// -------------------------------------
-// Obligations: Opus (producer)
-// -------------------------------------
-
-// Opus SHALL populate
-* active insert Obligation($opusActor, #SHALL:populate)
-* period insert Obligation($opusActor, #SHALL:populate)
-* practitioner insert Obligation($opusActor, #SHALL:populate)       // Employee for Opus
-* endpoint insert Obligation($opusActor, #SHALL:populate)           // TODO: SHALL correct?
-
-// Opus MAY populate
-* organization insert Obligation($opusActor, #MAY:populate)         // Business for Opus
-* healthcareService insert Obligation($opusActor, #MAY:populate)    // 0..0 for Opus
-* code insert Obligation($opusActor, #MAY:populate)                 // TODO: MAY correct?
-
-// -------------------------------------
-// Obligations: WOF (consumer/client)
-// -------------------------------------
-
-// WOF Client SHALL consume
-* active insert Obligation($clientActor, #SHALL:consume)
-* period insert Obligation($clientActor, #SHALL:consume)
-* practitioner insert Obligation($clientActor, #SHALL:consume)
-* endpoint insert Obligation($clientActor, #SHALL:consume)
-
-// WOF Client SHOULD consume
-* organization insert Obligation($clientActor, #SHOULD:consume)
-* healthcareService insert Obligation($clientActor, #SHOULD:consume)
-
-// WOF Client MAY consume
-* code insert Obligation($clientActor, #MAY:consume)
 
 Invariant: inv-practitionerrole-period
 Description: "If present, period.end must be on or after period.start"

@@ -21,6 +21,8 @@ Usage: #definition
 * type = true
 * instance = false          // Not an instance-level operation
 * affectsState = true       // Write operation
+* base = "https://profiles.ihe.net/ITI/Scheduling/OperationDefinition/appointment-book"
+
 
 * outputProfile = Canonical(ihe-sched-avail-bundle) // IHE ITI Scheduling Bundle Profile
 
