@@ -23,6 +23,7 @@ Usage: #definition
 * affectsState = true       // Write operation
 * base = "https://profiles.ihe.net/ITI/Scheduling/OperationDefinition/appointment-book"
 
+* base = "https://profiles.ihe.net/ITI/Scheduling/OperationDefinition/appointment-book"
 
 * outputProfile = Canonical(ihe-sched-avail-bundle) // IHE ITI Scheduling Bundle Profile
 
@@ -50,7 +51,7 @@ The Appointment to be created, modified, or cancelled.
 // out: result Bundle (on success)
 * parameter[+].name = #return
 * parameter[=].use = #out
-* parameter[=].min = 0
+* parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].type = #Bundle
 * parameter[=].documentation = """

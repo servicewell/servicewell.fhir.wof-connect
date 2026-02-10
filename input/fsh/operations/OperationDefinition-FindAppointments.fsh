@@ -17,6 +17,7 @@ Usage: #definition
 * type = true
 * instance = false          // Not an instance-level operation
 * affectsState = false      // Read-only
+* base = "https://profiles.ihe.net/ITI/Scheduling/OperationDefinition/appointment-find"
 
 * outputProfile = Canonical(ihe-sched-avail-bundle) // IHE ITI Scheduling Bundle Profile
 
@@ -87,8 +88,7 @@ typically carries a WOF Connect service-type identifier (e.g., [system]|[code] w
 * parameter[=].type = #Bundle
 * parameter[=].documentation = """
 On success, returns a Bundle that SHALL conform to ihe-sched-avail-bundle, containing the resulting Appointment:
-- status 'booked' for created or modified appointments
-- status 'cancelled' for cancelled appointments
+- status 'proposed' for available appointment opportunities (slots)
 
 If the operation fails, an OperationOutcome is returned instead of this parameter.
 """
