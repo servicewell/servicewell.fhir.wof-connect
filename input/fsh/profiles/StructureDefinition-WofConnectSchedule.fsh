@@ -66,56 +66,17 @@ Description: "Schedule for bookable service availability as exposed by WOF Conne
 // Rule: start <= end
 * planningHorizon obeys inv-schedule-planning
 
-// -------------------------------------
-// Obligations: Frenda (producer)
-// -------------------------------------
 
-// Frenda SHALL populate 
-* actor[practitionerRole] insert Obligation($frendaActor, #SHALL:populate)
-* serviceType[service-type-id].coding[st-id] insert Obligation($frendaActor, #SHALL:populate)
-* serviceType[service-type-id].coding[ep-id] insert Obligation($frendaActor, #SHALL:populate)
-* planningHorizon.start insert Obligation($frendaActor, #SHALL:populate)
-* planningHorizon.end insert Obligation($frendaActor, #SHALL:populate)
+* actor[practitionerRole] insert Obligation($serverActor, #SHALL:populate)
+* serviceType[service-type-id].coding[st-id] insert Obligation($serverActor, #SHALL:populate)
+* serviceType[service-type-id].coding[ep-id] insert Obligation($serverActor, #SHALL:populate)
+* planningHorizon.start insert Obligation($serverActor, #SHALL:populate)
+* planningHorizon.end insert Obligation($serverActor, #SHALL:populate)
 
-// Frenda SHOULD populate
-* actor[practitioner] insert Obligation($frendaActor, #SHOULD:able-to-populate)
+* actor[practitioner] insert Obligation($serverActor, #SHOULD:able-to-populate)
 
-// Frenda MAY populate
-* actor[healthcareService] insert Obligation($frendaActor, #MAY:able-to-populate)
+* actor[healthcareService] insert Obligation($serverActor, #MAY:able-to-populate)
 
-// -------------------------------------
-// Obligations: Opus (producer)
-// -------------------------------------
-
-// Opus SHALL populate 
-* actor[practitionerRole] insert Obligation($opusActor, #SHALL:populate)
-* serviceType[service-type-id].coding[st-id] insert Obligation($opusActor, #SHALL:populate)
-* serviceType[service-type-id].coding[ep-id] insert Obligation($opusActor, #SHALL:populate)
-* planningHorizon.start insert Obligation($opusActor, #SHALL:populate)
-* planningHorizon.end insert Obligation($opusActor, #SHALL:populate)
-
-// Opus SHOULD populate
-* actor[practitioner] insert Obligation($opusActor, #SHOULD:able-to-populate)
-
-// Opus MAY populate
-* actor[healthcareService] insert Obligation($opusActor, #MAY:able-to-populate)
-
-// -------------------------------------
-// Obligations: WOF (consumer/client)
-// -------------------------------------
-
-// WOF Client SHALL consume
-* actor[practitionerRole] insert Obligation($clientActor, #SHALL:consume)
-* serviceType[service-type-id].coding[st-id] insert Obligation($clientActor, #SHALL:consume)
-* serviceType[service-type-id].coding[ep-id] insert Obligation($clientActor, #SHALL:consume)
-* planningHorizon.start insert Obligation($clientActor, #SHALL:consume)
-* planningHorizon.end insert Obligation($clientActor, #SHALL:consume)
-
-// WOF Client SHOULD consume
-* actor[practitioner] insert Obligation($clientActor, #SHOULD:consume)
-
-// WOF Client MAY consume
-* actor[healthcareService] insert Obligation($clientActor, #MAY:consume)
 
 Invariant: inv-schedule-planning
 Description: "planningHorizon.start must be on or before planningHorizon.end"
