@@ -26,7 +26,6 @@ Description: "Patient returned by WOF Connect integrations."
 * identifier.type.coding 1..* MS
 * identifier.type.coding ^short = "Coded type of the identifier"
 * identifier insert Obligation($serverActor, #SHOULD:populate)
-* identifier insert Obligation($clientActor, #SHOULD:handle)
 
 
 * identifier ^slicing.discriminator.type = #pattern
@@ -58,13 +57,11 @@ Description: "Patient returned by WOF Connect integrations."
 * name.given 0..1
 * name.given ^short = "Given name of the patient often called 'first name'"
 * name insert Obligation($serverActor, #SHOULD:populate)
-* name insert Obligation($clientActor, #SHOULD:handle)
 
 
 * birthDate 1..1 MS
 * birthDate ^short = "Birth date of the patient"
 * birthDate insert Obligation($serverActor, #SHOULD:populate)
-* birthDate insert Obligation($clientActor, #SHOULD:handle)
 
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
@@ -78,7 +75,6 @@ Description: "Patient returned by WOF Connect integrations."
 * telecom[email].system = #email
 * telecom[email].system ^short = "Patient email address"
 * telecom insert Obligation($serverActor, #SHOULD:populate-if-known)
-* telecom insert Obligation($clientActor, #SHOULD:handle)
 
 
 * extension 1..* MS
@@ -86,6 +82,5 @@ Description: "Patient returned by WOF Connect integrations."
 * extension.value[x] 0..1
 * extension.value[x] ^short = "Value of the consent to marketing communication extension"
 * extension insert Obligation($serverActor, #SHOULD:populate)
-* extension insert Obligation($clientActor, #SHOULD:handle)
 
 

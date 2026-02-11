@@ -1,5 +1,3 @@
-Alias: $serverActor = https://serverActor.example.se
-
 Profile: WofConnectPractitionerRole
 Parent: PractitionerRole
 Id: wof-connect-practitionerrole
