@@ -7,3 +7,4 @@ Alias: $frendaActor             = http://canonical.fhir.link/servicewell/wof-con
 Alias: $opusActor               = http://canonical.fhir.link/servicewell/wof-connect/ActorDefinition/opus-pms
 Alias: $clientActor             = http://canonical.fhir.link/servicewell/wof-connect/ActorDefinition/wof-client
 Alias: $serverWithDeviceBooking = http://canonical.fhir.link/servicewell/wof-connect/ActorDefinition/server-with-device-booking
+Alias: $serverActor             = https://serveractor.examplse.se
