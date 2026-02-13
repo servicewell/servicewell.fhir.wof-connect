@@ -10,7 +10,7 @@ Description: "Allowed identifier.system values for national personal numbers use
 * #urn:oid:2.16.578.1.12.4.1.4.2 "Norwegian Temporary Identity Number (D-number)"
 * #urn:oid:2.16.578.1.12.4.1.4.3 "Norwegian Healthcare Identity Number (H-number)"
 * #urn:oid:2.16.578.1.12.4.1.4.4 "Norwegian Temporary Healthcare Identifier (FH-number)"
-* #urn:oid:2.16.578.1.12.4.1.4.5 "Norwegian Immigration Case Identifier (DUF-number"
+* #urn:oid:2.16.578.1.12.4.1.4.5 "Norwegian Immigration Case Identifier (DUF-number)"
 * #urn:oid:1.2.752.129.2.1.3.1 "Swedish Personal Identity Number"
 * #urn:oid:1.2.752.129.2.1.3.3 "Swedish Coordination Number"
 * #http://electronichealth.se/identifier/personnummer "Swedish national personal number identifier (HTTP URI)"

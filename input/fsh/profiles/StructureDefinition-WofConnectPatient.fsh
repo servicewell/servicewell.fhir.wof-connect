@@ -27,7 +27,6 @@ Description: "Patient returned by WOF Connect integrations."
 * identifier.type.coding ^short = "Coded type of the identifier"
 * identifier insert Obligation($serverActor, #SHOULD:populate)
 
-
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
@@ -42,9 +41,9 @@ Description: "Patient returned by WOF Connect integrations."
 * identifier[personalNumber].value ^short = "Personal number value"
 
 * identifier[personalNumber].system 1..1
-* identifier[personalNumber].system from WofPersonalNumberSystemVS (required)
+* identifier[personalNumber].system from WofPersonalNumberSystemVS (extensible)
 * identifier[personalNumber].system ^short = "System that issued the personal number"
-
+* identifier[personalNumber].system ^comments= "see (url till namingsystem)"
 * active 0..1 MS
 * active ^short = "Whether the patient record is active or not"
 
@@ -57,7 +56,6 @@ Description: "Patient returned by WOF Connect integrations."
 * name.given 0..1
 * name.given ^short = "Given name of the patient often called 'first name'"
 * name insert Obligation($serverActor, #SHOULD:populate)
-
 
 * birthDate 1..1 MS
 * birthDate ^short = "Birth date of the patient"
