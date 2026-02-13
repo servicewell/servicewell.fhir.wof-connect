@@ -2,7 +2,7 @@ Profile: WofConnectBookingAppointment
 Parent: ihe-sched-appt // IHE ITI Appointment Profile
 Id: wof-connect-booking-appointment
 Title: "Wof Connect Booking Appointment"
-Description: "Appointment representation of a booked visit (Frenda booking mapped to Appointment). Inherits IHE Scheduling Appointment."
+Description: "Appointment representation of a booked visit. Inherits IHE Scheduling Appointment."
 * ^status = #active
 
 * id 1..1
