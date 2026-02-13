@@ -7,8 +7,9 @@ Description: "PractitionerRole as exposed by WOF Connect integrations."
 * ^status = #active
 
 * id 1..1 MS
-* meta 1..1
+
 * meta.profile 1..*
+* meta.source 1..1
 
 * active 1..1 MS
 

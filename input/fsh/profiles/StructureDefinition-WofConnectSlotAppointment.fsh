@@ -7,10 +7,8 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 
 * id 1..1
 
-* meta 1..1
-* meta.tag 1..*
-* meta.tag.system 1..1
-* meta.tag.code 1..1
+* meta.profile 1..*
+* meta.source 1..1
 
 * status 1..1
 * status = #proposed (exactly)

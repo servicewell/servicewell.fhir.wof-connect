@@ -7,8 +7,8 @@ Description: "Schedule for bookable service availability as exposed by WOF Conne
 * ^version = "1.0.0"
 * ^status = #active
 
-* meta 1..1
 * meta.profile 1..*
+* meta.source 1..1
 
 // ServiceType terminology
 * serviceType 1..* MS

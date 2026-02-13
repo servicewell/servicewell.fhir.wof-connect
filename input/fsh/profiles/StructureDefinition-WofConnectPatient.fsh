@@ -7,13 +7,10 @@ Description: "Patient returned by WOF Connect integrations."
 * ^version = "1.0.0"
 * ^status = #active
 
-* meta 1..1 MS
-* meta.id 0..1
-* meta.id ^short = "ID for the meta element"
-* meta.profile 1..* MS
-* meta.profile ^short = "Profile URL for WOF Connect Patient"
-* meta.versionId 0..1
-* meta.versionId ^short = "Version ID for the meta element"
+* meta.profile 1..*
+* meta.source 1..1
+
+
 
 * identifier 1..* MS
 * identifier ^short = "Identifier for the patient"
