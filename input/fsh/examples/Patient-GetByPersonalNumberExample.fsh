@@ -23,5 +23,6 @@ Usage: #example
 
 // =================================================================================
 
+* meta.source = "frenda"
 * birthDate = "2024-06-05" //Manuellt tillägg till exempelfilen. Bugg lagd: 8960
 * extension.url = "apa" //Manuellt tillägg till exempelfilen. Bugg lagd: 8960
