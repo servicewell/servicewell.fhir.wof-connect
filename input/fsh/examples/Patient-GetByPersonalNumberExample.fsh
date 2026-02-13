@@ -1,11 +1,11 @@
 // ==========================================
-// ====== Detta är data utifrån tester ======
+// ====== Detta är data utifrån frenda ======
 // ==========================================
 
 Alias: $pms-system = http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/pms-system
 
 Instance: Patient-GetByPersonalNumberExample
-InstanceOf: Patient
+InstanceOf: WofConnectPatient
 Usage: #example
 * identifier.system = "urn:oid:1.2.752.129.2.1.3.1"
 * identifier.value = "199001072397"
@@ -20,3 +20,8 @@ Usage: #example
 * telecom[+].system = #phone
 * telecom[=].value = "0763002510"
 * telecom[=].use = #mobile
+
+// =================================================================================
+
+* birthDate = "2024-06-05" //Manuellt tillägg till exempelfilen. Bugg lagd: 8960
+* extension.url = "apa" //Manuellt tillägg till exempelfilen. Bugg lagd: 8960
