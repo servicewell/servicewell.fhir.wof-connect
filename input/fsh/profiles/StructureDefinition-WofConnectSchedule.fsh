@@ -2,7 +2,11 @@ Profile: WofConnectSchedule
 Parent: Schedule
 Id: wof-connect-schedule
 Title: "Wof Connect Schedule"
-Description: "Schedule for bookable service availability as exposed by WOF Connect integrations."
+Description: """
+<p><b>SchedulePortal</b> represents when a practitioner is planned to work during a given time period.</p>
+
+<p>It answers the question: <i>“Who is working in the coming weeks, and who can potentially be shown as bookable?”</i></p>
+"""
 
 * ^version = "1.0.0"
 * ^status = #active
@@ -21,6 +25,8 @@ Description: "Schedule for bookable service availability as exposed by WOF Conne
 * serviceType contains service-type-id 1..1 MS 
 * serviceType[service-type-id] ^short = "Service Type Identifier Code and Endpoint Id Code"
 * serviceType[service-type-id].coding 2..2
+* serviceType.text 0..1
+* serviceType.text insert Obligation($serverActor, #SHOULD:populate)
 
 * serviceType[service-type-id].coding ^slicing.discriminator.type = #value
 * serviceType[service-type-id].coding ^slicing.discriminator.path = "system"
@@ -39,6 +45,7 @@ Description: "Schedule for bookable service availability as exposed by WOF Conne
 * actor 1..* MS
 * actor ^short = "Clinic and provider actors in scope for this schedule"
 * actor only Reference(WofConnectHealthcareService or WofConnectPractitioner or WofConnectPractitionerRole)
+* actor.display 1..1
 
 // Slicing by type to require at least one of each
 * actor ^slicing.discriminator.type = #type
