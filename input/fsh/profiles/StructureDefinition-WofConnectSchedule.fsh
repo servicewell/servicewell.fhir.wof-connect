@@ -3,9 +3,9 @@ Parent: Schedule
 Id: wof-connect-schedule
 Title: "Wof Connect Schedule"
 Description: """
-<p><b>SchedulePortal</b> represents when a practitioner is planned to work during a given time period.</p>
+**SchedulePortal** represents when a practitioner is planned to work during a given time period.
 
-<p>It answers the question: <i>“Who is working in the coming weeks, and who can potentially be shown as bookable?”</i></p>
+It answers the question: __“Who is working in the coming weeks, and who can potentially be shown as bookable?”__
 """
 
 * ^version = "1.0.0"
