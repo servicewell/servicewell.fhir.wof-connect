@@ -39,11 +39,9 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-pages:
-  terminology.md:
-    title: Terminology
-  index.md:
-    title: Home
+# pages:
+#   index.md:
+#     title: Example Home
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -74,8 +72,6 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Start Here : apa.html
-  Terminology: terminology.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
