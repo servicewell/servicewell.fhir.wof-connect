@@ -63,7 +63,7 @@ If multiple values are supplied, the server MAY treat them as an OR or AND filte
 * parameter[=].min = 0
 * parameter[=].max = "*"
 * parameter[=].type = #Reference
-* parameter[=].targetProfile = Canonical(WofConnectEconomyOrganization)
+* parameter[=].targetProfile = Canonical(WofConnectBillingOrganization)
 * parameter[=].documentation = """
 Restrict the search to Appointments associated with a specific Organization (e.g., business/clinic owner).
 """

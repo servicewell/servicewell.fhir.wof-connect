@@ -26,7 +26,7 @@ Description: "PractitionerRole as exposed by WOF Connect integrations."
 * practitioner.display 0..1 MS
 
 * organization 0..1 MS
-* organization only Reference(WofConnectEconomyOrganization)
+* organization only Reference(WofConnectBillingOrganization)
 * organization ^short = "The organization (e.g. business, cost location) that has the practitioner role"
 * organization.reference 1..1 MS
 * organization.display 0..1 MS

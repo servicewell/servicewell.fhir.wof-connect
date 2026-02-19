@@ -192,7 +192,7 @@ typically tied to a HealthcareService and used for scheduling and booking.
 // Organization (Economy/Billing)
 // ------------------------------------------------------------
 * rest[0].resource[+].type = #Organization
-* rest[0].resource[=].profile = Canonical(WofConnectEconomyOrganization)
+* rest[0].resource[=].profile = Canonical(WofConnectBillingOrganization)
 * rest[0].resource[=].documentation = """
 Organization represents an economic or billing entity in WOF Connect.
 Organizations are typically returned as part of Schedule and PractitionerRole context
@@ -258,7 +258,7 @@ Note: Schedules also carry endpoint-id as an additional coding for uniqueness, b
 * rest[0].resource[=].operation[=].definition = Canonical(GetScheduleContext)
 * rest[0].resource[=].operation[=].documentation = """
 Returns a searchset Bundle conforming to WofConnectScheduleContextOperationResponse, containing:
-- Organization (WofConnectEconomyOrganization)
+- Organization (WofConnectBillingOrganization)
 - HealthcareService (WofConnectHealthcareService)
 - ActivityDefinition (WofConnectActivityDefinition)
 - Schedule (WofConnectSchedule)

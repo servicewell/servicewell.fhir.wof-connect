@@ -50,7 +50,7 @@ Usage: #definition
 * parameter[=].type = #Reference
 * parameter[=].targetProfile[0] = Canonical(WofConnectPractitionerRole)
 * parameter[=].targetProfile[+] = Canonical(WofConnectPractitioner)
-* parameter[=].targetProfile[+] = Canonical(WofConnectEconomyOrganization)
+* parameter[=].targetProfile[+] = Canonical(WofConnectBillingOrganization)
 * parameter[=].documentation = "Filter on specific actors referenced by Schedule.actor."
 
 // ---- Output ----

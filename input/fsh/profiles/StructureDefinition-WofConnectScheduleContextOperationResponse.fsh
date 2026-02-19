@@ -34,7 +34,7 @@ Description: "Bundle (searchset) returned by the WOF-CONNECT GetScheduleContext 
     pracrole 0..*
 
 // Constrain profile/type per slice
-* entry[org].resource only WofConnectEconomyOrganization
+* entry[org].resource only WofConnectBillingOrganization
 * entry[hcs].resource only WofConnectHealthcareService
 * entry[actdef].resource only WofConnectActivityDefinition
 * entry[sched].resource only WofConnectSchedule
