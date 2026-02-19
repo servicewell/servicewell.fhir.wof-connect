@@ -32,11 +32,14 @@ Description: """
 Supplement adding SNOMED CT mappings for WOF Connect Practitioner Role codes.
 Used as guide to understand how connecters should map their corresponding Role codes.
 """
+* ^url = "http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/practitioner-role-snomed-supplement"
+
 * ^status = #draft
 * ^experimental = false
 * ^content = #supplement
 * ^supplements = "http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/practitioner-role"
 * ^property.code = #Snomed
+* ^property.uri = "http://snomed.info/sct"
 * ^property.description = "SNOMED conceptId"
 * ^property.type = #code
 * #dentist
