@@ -3,16 +3,26 @@ Parent: Patient
 Id: wof-connect-patient
 Title: "Wof Connect Patient"
 Description: "Patient returned by WOF Connect integrations."
-
 * ^version = "1.0.0"
 * ^status = #active
 
-* id 1..1
+* obeys no-id-requires-identifier 
 
-* meta.profile 1..*
-* meta.source 1..1
+* id 1..1 MS
 
-
+* meta 1..1 MS
+* meta.id 0..1
+* meta.id ^short = "ID for the meta element"
+* meta.profile 1..* MS
+* meta.profile ^short = "Profile URL for WOF Connect Patient"
+* meta.versionId 0..1
+* meta.versionId ^short = "Version ID for the meta element"
+* meta.tag 1..*
+* meta.tag.code 1..1 MS
+* meta.tag.code ^short = "System the data originates from"
+* meta.tag.system 1..1 MS
+* meta.tag.system = "http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/pms-system"
+* meta.profile 1..* MS
 
 * identifier 1..* MS
 * identifier ^short = "Identifier for the patient"
