@@ -4,6 +4,7 @@ Id: wof-connect-healthcareservice-list
 Title: "Wof Connect HealthcareService List"
 Description: "A list of HealthcareService references"
 
+* id 1..1
 * id = "HealthcareServiceListId"
 * status = #current
 * mode = #working

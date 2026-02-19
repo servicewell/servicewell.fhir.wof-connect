@@ -7,5 +7,7 @@ Description: "Basic resource used to carry the WOF-CONNECT capabilities extensio
 * extension contains
 WofConnectCharacteristic named WofConnectCharacteristic 1..1 MS 
 
+* id 1..1
+
 
 

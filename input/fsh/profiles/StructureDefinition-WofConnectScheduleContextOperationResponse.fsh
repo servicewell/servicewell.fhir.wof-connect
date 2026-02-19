@@ -4,6 +4,8 @@ Id: wof-connect-schedule-context-operation-response
 Title: "WOF Connect GetScheduleContext Operation Response"
 Description: "Bundle (searchset) returned by the WOF-CONNECT GetScheduleContext operation."
 
+* id 1..1
+
 * type 1..1
 * type = #searchset (exactly)
 * meta 1..1

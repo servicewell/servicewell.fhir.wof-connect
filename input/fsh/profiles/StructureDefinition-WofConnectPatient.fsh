@@ -7,6 +7,8 @@ Description: "Patient returned by WOF Connect integrations."
 * ^version = "1.0.0"
 * ^status = #active
 
+* id 1..1
+
 * meta.profile 1..*
 * meta.source 1..1
 
