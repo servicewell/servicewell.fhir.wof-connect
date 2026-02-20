@@ -2,7 +2,10 @@ Profile: WofConnectPractitionerRole
 Parent: PractitionerRole
 Id: wof-connect-practitionerrole
 Title: "Wof Connect PractitionerRole"
-Description: "PractitionerRole as exposed by WOF Connect integrations."
+Description: """
+**PractitionerRolePortal** represents a practitioner acting in a specific operational and financial context.
+It answers the question: __“In which role, at which service location, and under which financial responsibility does this practitioner perform services?"__
+"""
 * ^version = "1.0.0"
 * ^status = #active
 
