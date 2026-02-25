@@ -5,7 +5,7 @@
 Instance: ServiceTypeId
 InstanceOf: NamingSystem
 Title: "Service Type Id as Code"
-Description: "NamingSystem describing the dynamic code system used for service types that identifies with an ID, for example treatment.id in Frenda"
+Description: "NamingSystem describing the dynamic code system used for service types that identifies with an ID"
 Usage: #definition
 * id = "service-type-id"
 * name = "ServiceTypeId"

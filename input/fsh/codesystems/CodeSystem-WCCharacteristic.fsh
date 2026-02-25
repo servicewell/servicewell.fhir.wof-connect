@@ -1,7 +1,7 @@
 CodeSystem: WCCharacteristic
 Id: wc-characteristic
 Title: "WOF-Connect Characteristic"
-Description: "WOF-Connect CodeSystem for Characteristic for the source PMS system - e.g., Frenda, Opus Dental, used in WOF-Connect HealthcareService.characteristic"
+Description: "WOF-Connect CodeSystem for Characteristic for the source PMS system - used in WOF-Connect HealthcareService.characteristic"
 * ^status = #active
 * ^content = #complete
 * ^experimental = false
@@ -18,7 +18,7 @@ Description: "WOF-Connect CodeSystem for Characteristic for the source PMS syste
 ValueSet: VsWCCharacteristic
 Id:  wc-characteristic   
 Title: "WOF-Connect Characteristic"
-Description: "WOF-Connect ValueSet for Characteristic for the source PMS system - e.g., Frenda, Opus Dental, used in WOF-Connect HealthcareService.characteristic"
+Description: "WOF-Connect ValueSet for Characteristic for the source PMS system - used in WOF-Connect HealthcareService.characteristic"
 * ^status = #active
 * ^experimental = false
 
