@@ -26,6 +26,8 @@ publisher:
 #
 dependencies:
   ihe.iti.scheduling: 1.0.0
+  hl7.terminology.r4: 7.0.0
+  hl7.fhir.uv.extensions.r4: 5.2.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can

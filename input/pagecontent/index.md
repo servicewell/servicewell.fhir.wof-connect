@@ -20,8 +20,12 @@ This IG focuses on appointment scheduling workflows for dental care, including:
   
 ### Standards & Interoperability
 WOF Connect is built on **HL7® FHIR®** and aligns with the **[IHE Scheduling Implementation Guide](https://build.fhir.org/ig/IHE/ITI.Scheduling/)**, ensuring compatibility with established international scheduling patterns.
-#### Dependencies: 
- <!-- Lägg till dependencies här -->
+#### Dependencies
+
+This implementation guide is based on the **FHIR R4 (4.0.1)** specification.  
+In addition, it relies on the following implementation guides:
+
+{% include dependency-table-short.xhtml %}
 
 
 ### Audience
