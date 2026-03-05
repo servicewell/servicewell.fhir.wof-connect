@@ -228,6 +228,7 @@ The exact identifier system is vendor-specific but MUST be stable per endpoint.
 * rest[0].resource[+].type = #Schedule
 * rest[0].resource[=].profile = Canonical(WofConnectSchedule)
 * rest[0].resource[=].supportedProfile[+] = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/IHE.Scheduling.Schedule|1.0.0"
+* rest[0].resource[=].supportedProfile[+] = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-schedule|1.0.0"
 * rest[0].resource[=].documentation = "Schedules represent planned working time and related scheduled context."
 
 * rest[0].resource[=].interaction[+].code = #read
