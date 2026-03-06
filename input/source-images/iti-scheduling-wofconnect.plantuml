@@ -1,0 +1,179 @@
+@startuml ITI-Scheduling-WofConnect
+
+' ============================================================
+' IHE ITI Scheduling – WofConnect Profile Mapping
+' Based on: https://profiles.ihe.net/ITI/Scheduling/1.0.0/
+' ============================================================
+
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+skinparam sequenceMessageAlign center
+skinparam BoxPadding 12
+skinparam ParticipantPadding 16
+skinparam SequenceGroupBorderThickness 1
+
+title **IHE ITI Scheduling 1.0.0 – WofConnect Profile Mapping**
+
+actor "End User\n(Patient / Provider)" as User
+box "Scheduling Client" #E8F4FD
+  participant "Clinical System" as Client
+end box
+
+box "Scheduling Server  (WofConnect)" #FFF3E0
+  participant "WOF Connect\nFHIR Server" as Server
+end box
+
+== **0 – Prerequisite: Discover Capabilities & Context** ==
+
+note over Client, Server #FFFDE7
+  **WofConnect-specific (beyond ITI Scheduling)**
+  These operations provide scheduling context and
+  capability discovery before the standard ITI flow.
+end note
+
+User -> Client : Open scheduling view
+Client -> Server : **$wof-capabilities**  (system-level)
+note right #E0F7FA
+  **Response:**
+  «WofConnectCapabilitiesCarrier»  (Basic)
+  + ext: «WofConnectCharacteristic»
+  (scheduling / workflow / security flags)
+end note
+Server --> Client : Basic resource
+
+Client -> Server : **$get-schedule-context**  (Schedule type-level)
+note right #E0F7FA
+  **Input:** period-start, period-end,\nhealthcare-service, actor
+  **Response Bundle:**
+  «WofConnectScheduleContextOperationResponse»
+  containing:
+  ├ «WofConnectBillingOrganization»  (Organization)
+  ├ «WofConnectHealthcareService»  (HealthcareService)
+  ├ «WofConnectActivityDefinition»  (ActivityDefinition)
+  ├ «WofConnectSchedule»  (Schedule)
+  ├ «WofConnectPractitioner»  (Practitioner)
+  └ «WofConnectPractitionerRole»  (PractitionerRole)
+end note
+Server --> Client : Bundle (searchset)
+
+Client -> Server : GET Patient?identifier=<personnummer>
+note right #E0F7FA
+  **Response:** «WofConnectPatient»
+  (identifier: personalNumber, name, birthDate, telecom)
+end note
+Server --> Client : Patient resource
+
+== **1 – ITI-115: Find Potential Appointments  [$find]** //Required// ==
+
+User -> Client : Select criteria\n(date range, provider, visit type)
+Client -> Server : POST Appointment/**$find**
+note right #C8E6C9
+  **Input params:**
+  • start (dateTime)
+  • end (dateTime)
+  • practitioner (Reference) – optional
+  • organization (Reference) – optional
+  • visit-type (string) – optional
+end note
+Server --> Client : **Bundle**
+note right #C8E6C9
+  «WofConnectFindAppointment»
+  profiles: **ihe-sched-avail-bundle**
+  entry[]:
+  └ «WofConnectAppointment»
+    profiles: **ihe-sched-appt**
+    status = **proposed**
+    + serviceType, start, end
+    + identifier (SlotId)
+    + participant[2] (actor + status)
+end note
+
+== **2 – ITI-116: Hold Appointment  [$hold]** //Optional// ==
+note over Client, Server #FFF9C4
+  WofConnect CapabilityStatement declares $hold as SHALL,
+  but **no dedicated WofConnect profile** exists for this transaction.
+  The standard **ihe-sched-appt** profile is used.
+end note
+
+User -> Client : Select appointment
+Client -> Server : POST Appointment/**$hold**
+Server --> Client : Bundle (held Appointment)
+
+== **3 – ITI-117: Book Appointment  [$book]** //Required// ==
+
+User -> Client : Confirm booking /\nModify / Cancel
+
+group **CREATE** [status = pending, no existing id]
+  Client -> Server : POST Appointment/**$book**
+  note right #C8E6C9
+    **Input:**
+    appointment resource
+    (status = **pending**)
+  end note
+end
+
+group **MODIFY** [status = booked, existing id, updated details]
+  Client -> Server : POST Appointment/**$book**
+  note right #C8E6C9
+    **Input:**
+    appointment resource
+    (status = **booked**, existing id)
+  end note
+end
+
+group **CANCEL** [status = cancelled, existing id]
+  Client -> Server : POST Appointment/**$book**
+  note right #C8E6C9
+    **Input:**
+    appointment resource
+    (status = **cancelled**, existing id)
+  end note
+end
+
+Server --> Client : **Bundle**
+note right #C8E6C9
+  «WofConnectFindAppointment» (Bundle)
+  entry[]:
+  └ «WofConnectBookingAppointment»
+    profiles: **ihe-sched-appt**
+    status = **booked** | **cancelled** | **fulfilled**
+    + ext: «WofConnectCharacteristic»
+    + ext: «WofConnectAppointmentUpdate»
+      (canBeRescheduled, canBeCancelled,
+       webReschedulingCount)
+    + serviceType, start, end
+    + participant[2], reasonCode
+end note
+
+== **4 – ITI-118: Find Existing Appointments  [FHIR Search]** //Optional// ==
+
+Client -> Server : GET Appointment?patient=<id>&date=<range>
+Server --> Client : **Bundle** (searchset)
+note right #C8E6C9
+  Contains existing
+  «WofConnectBookingAppointment» resources
+end note
+
+== **Supporting Resource Access (read / search)** ==
+
+note over Client, Server #F3E5F5
+  Standard FHIR REST interactions on supporting resources.
+  All profiled by WofConnect.
+end note
+
+Client -> Server : GET HealthcareService?identifier=<id>
+note right #F3E5F5: «WofConnectHealthcareService»
+Client -> Server : GET Organization?identifier=<id>
+note right #F3E5F5: «WofConnectBillingOrganization»
+Client -> Server : GET PractitionerRole?service=<ref>
+note right #F3E5F5: «WofConnectPractitionerRole»
+Client -> Server : GET Practitioner/<id>
+note right #F3E5F5: «WofConnectPractitioner»
+Client -> Server : GET ActivityDefinition?code=<code>
+note right #F3E5F5: «WofConnectActivityDefinition»
+Client -> Server : GET Schedule?actor=<ref>&service-type=<token>
+note right #F3E5F5: «WofConnectSchedule»
+
+@enduml
