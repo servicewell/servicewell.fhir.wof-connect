@@ -21,8 +21,11 @@ Usage: #example
 * telecom[=].value = "0763002510"
 * telecom[=].use = #mobile
 
-// =================================================================================
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
 
-* meta.source = "frenda"
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
 * birthDate = "2024-06-05" //Manuellt tillägg till exempelfilen. Bugg lagd: 8960
 * extension.url = "apa" //Manuellt tillägg till exempelfilen. Bugg lagd: 8960

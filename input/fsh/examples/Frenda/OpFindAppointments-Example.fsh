@@ -19,7 +19,7 @@ Usage: #example
 * total = 4
 
 Instance: 756b2987-2112-d1ea-c06b-0b852fa3ce9d
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #inline
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -36,8 +36,16 @@ Usage: #inline
 * participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da)
 * participant[=].status = #accepted
 
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
+
+
 Instance: 1051527c-4be8-faa4-3da6-28aa22d73a84
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #inline
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -54,8 +62,16 @@ Usage: #inline
 * participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da)
 * participant[=].status = #accepted
 
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
+
+
 Instance: 34c8d6b1-b463-918f-0a1c-3490475b25e4
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #inline
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -72,8 +88,17 @@ Usage: #inline
 * participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da)
 * participant[=].status = #accepted
 
+
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
+
+
 Instance: a8487527-36ba-95ae-19fc-b8817c938410
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #inline
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -89,3 +114,11 @@ Usage: #inline
 * participant[=].status = #accepted
 * participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da)
 * participant[=].status = #accepted
+
+
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"

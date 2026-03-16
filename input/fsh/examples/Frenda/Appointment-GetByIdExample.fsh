@@ -7,7 +7,7 @@ Alias: $wc-characteristic = http://canonical.fhir.link/servicewell/wof-connect/C
 Alias: $service-type-id = http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/service-type-id
 
 Instance: Appointment-GetByIdExample
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #example
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -29,7 +29,7 @@ Usage: #example
 * extension[=].extension[=].valueBoolean = true
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* status = #booked
+//* status = #booked //data från frenda visar #booked
 * description = "Akut"
 * start = "2026-02-12T08:00:00Z"
 * end = "2026-02-12T08:30:00Z"
@@ -39,3 +39,15 @@ Usage: #example
 * participant[=].status = #accepted
 * participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da) "Service Well AB"
 * participant[=].status = #accepted
+
+
+
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
+* status = #proposed
+* identifier[0].system = "http://dummy.system/appointment-id"
+* identifier[0].value = "123456"

@@ -19,7 +19,7 @@ Usage: #example
 * total = 3
 
 Instance: 8f9073da-6e5c-467c-8464-132953582e41
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #inline
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -41,7 +41,6 @@ Usage: #inline
 * extension[=].extension[=].valueBoolean = false
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* status = #cancelled
 * description = "Akut"
 * start = "2025-12-05T08:00:00+00:00"
 * end = "2025-12-05T08:30:00Z"
@@ -49,11 +48,24 @@ Usage: #inline
 * requestedPeriod.end = "2025-12-05T08:30:00Z"
 * participant[0].actor = Reference(Practitioner/3dc38cf1-2039-40f1-b85f-6164f202c235) "Utv Mattias Ekberg"
 * participant[=].status = #accepted
-* participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da) "Service Well AB"
+* participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da-test) "Service Well AB"
 * participant[=].status = #accepted
+
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
+
+* identifier.system = "http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/slot-id"
+* identifier.value = "dummy-slot-id-X"
+
+* status = #proposed
+//* status = #cancelled // riktig data från frenda
 
 Instance: 7a1fc89d-5801-48be-adab-837ba310c7b6
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #inline
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -75,7 +87,6 @@ Usage: #inline
 * extension[=].extension[=].valueBoolean = false
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* status = #cancelled
 * description = "Akut"
 * start = "2025-12-05T08:00:00+00:00"
 * end = "2025-12-05T08:30:00Z"
@@ -83,11 +94,24 @@ Usage: #inline
 * requestedPeriod.end = "2025-12-05T08:30:00Z"
 * participant[0].actor = Reference(Practitioner/3dc38cf1-2039-40f1-b85f-6164f202c235) "Utv Mattias Ekberg"
 * participant[=].status = #accepted
-* participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da) "Service Well AB"
+* participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da-test) "Service Well AB"
 * participant[=].status = #accepted
 
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
+
+* identifier.system = "http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/slot-id"
+* identifier.value = "dummy-slot-id-X"
+
+* status = #proposed
+//* status = #cancelled //riktig data från frenda
+
 Instance: 5999d619-3f28-492d-ac78-12de072f4032
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #inline
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -109,7 +133,6 @@ Usage: #inline
 * extension[=].extension[=].valueBoolean = false
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* status = #cancelled
 * description = "Akut"
 * start = "2025-12-05T08:00:00+00:00"
 * end = "2025-12-05T08:30:00Z"
@@ -117,5 +140,19 @@ Usage: #inline
 * requestedPeriod.end = "2025-12-05T08:30:00Z"
 * participant[0].actor = Reference(Practitioner/3dc38cf1-2039-40f1-b85f-6164f202c235) "Utv Mattias Ekberg"
 * participant[=].status = #accepted
-* participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da) "Service Well AB"
+* participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da-test) "Service Well AB"
 * participant[=].status = #accepted
+
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
+
+* identifier.system = "http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/slot-id"
+* identifier.value = "dummy-slot-id-X"
+
+* status = #proposed
+//* status = #cancelled //riktig data från frenda

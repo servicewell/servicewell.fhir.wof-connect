@@ -16,7 +16,7 @@ Usage: #example
 * entry.resource = 4362a446-f074-462d-a570-646497ba951b-modify
 
 Instance: 4362a446-f074-462d-a570-646497ba951b-modify
-InstanceOf: Appointment
+InstanceOf: WofConnectAppointment
 Usage: #inline
 * meta.tag = $pms-system#frenda
 * meta.profile = "https://profiles.ihe.net/ITI/Scheduling/StructureDefinition/ihe-sched-appt"
@@ -38,7 +38,6 @@ Usage: #inline
 * extension[=].extension[=].valueBoolean = true
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* status = #booked
 * description = "Akut"
 * start = "2026-02-12T09:00:00Z"
 * end = "2026-02-12T09:30:00Z"
@@ -48,3 +47,15 @@ Usage: #inline
 * participant[=].status = #accepted
 * participant[+].actor = Reference(Organization/48e428b0-fb37-4224-84df-5783a301a9da) "Service Well AB"
 * participant[=].status = #accepted
+
+
+// =======================================================
+// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
+// Remove when proper mapping is implemented
+// =======================================================
+
+* meta.source = "http://canonical.fhir.link/servicewell/wof-connect/sourcesystem/frenda"
+* status = #proposed
+* identifier[0].system = "http://dummy.system/appointment-id"
+* identifier[0].value = "123456"
+//* status = #booked //riktig data från frenda
