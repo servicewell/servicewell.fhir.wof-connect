@@ -11,7 +11,7 @@ Description: "Bundle (searchset) returned by the WOF-CONNECT GetScheduleContext 
 * meta 1..1
 * meta.lastUpdated 1..1
 * meta.profile 1..*
-* meta.source 1..1 
+
 * total 1..1
 * entry 1..* MS
 * entry.resource 1..1 MS
