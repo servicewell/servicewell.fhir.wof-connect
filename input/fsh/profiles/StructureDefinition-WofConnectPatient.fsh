@@ -18,7 +18,9 @@ Description: "Patient returned by WOF Connect integrations."
 * meta.versionId 0..1
 * meta.versionId ^short = "Version ID for the meta element"
 * meta.tag 1..*
-* meta.tag.code 1..1 MS
+* meta.tag.code 0..1 MS
+* meta.tag.code insert Obligation($clientActor, #SHALL:populate)
+
 * meta.tag.code ^short = "System the data originates from"
 * meta.tag.system 1..1 MS
 * meta.tag.system = "http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/pms-system"
@@ -36,8 +38,11 @@ Description: "Patient returned by WOF Connect integrations."
 * identifier.type.coding ^short = "Coded type of the identifier"
 * identifier insert Obligation($serverActor, #SHOULD:populate)
 
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "type.coding.code"
+* identifier ^slicing.discriminator[0].type = #value
+* identifier ^slicing.discriminator[0].path = "type.text"
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "type.coding.code"
+
 * identifier ^slicing.rules = #open
 
 * identifier contains personalNumber 1..1 MS
