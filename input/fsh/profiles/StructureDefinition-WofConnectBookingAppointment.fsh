@@ -8,7 +8,6 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 * id 1..1
 
 * meta.profile 1..*
-* meta.source 1..1
 
 * status 1..1
 * obeys wof-booked-status

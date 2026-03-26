@@ -12,7 +12,6 @@ It answers the question: __“In which role, at which service location, and unde
 * id 1..1 MS
 
 * meta.profile 1..*
-* meta.source 1..1
 
 * active 1..1 MS
 
