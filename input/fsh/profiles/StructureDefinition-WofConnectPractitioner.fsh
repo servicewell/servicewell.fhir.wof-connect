@@ -7,7 +7,6 @@ Description: "Practitioner resource as exposed by WOF Connect integrations."
 * ^status = #active
 
 * meta.profile 1..*
-* meta.source 1..1
 
 * id 1..1 MS
 * id ^short = "Logical id of the practitioner"
