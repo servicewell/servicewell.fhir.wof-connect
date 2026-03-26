@@ -48,7 +48,8 @@ It answers the question: __“What service is the patient booking?”__
 * code.text 0..1 MS
 * code.text ^short = "Text representation of the service type"
 
-* timingDuration 1..1 MS
+* timing[x] insert Obligation($serverActor, #SHOULD:populate-if-known)
+* timingDuration 0..1 MS
 * timingDuration ^short = "Duration in minutes"
 * timingDuration.value 1..1 MS
 * timingDuration.value ^short = "Numeric duration"
@@ -59,7 +60,8 @@ It answers the question: __“What service is the patient booking?”__
 * timingDuration.system = $ucum 
 * timingDuration.code = #min
 
-* participant 1..* MS
+* participant insert Obligation($serverActor, #SHOULD:populate)
+* participant 0..* MS
 * participant ^short = "Who can perform the service"
 * participant.type 1..1 MS
 * participant.type ^short = "Type of participant"

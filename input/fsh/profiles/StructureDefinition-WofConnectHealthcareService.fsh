@@ -20,7 +20,7 @@ It answers the question: **'Where can the patient receive a service?'**
 * id 1..1 MS
 * id ^short = "logical id for Wof Connect HealthcareService"
 
-* identifier 1..* MS
+* identifier 0..* MS
 * identifier ^short = "Identifier for the healthcare service"
 * identifier.system 1..1 MS
 * identifier.system ^short = "System that issued the identifier (e.g. hospital, government)"
@@ -30,7 +30,7 @@ It answers the question: **'Where can the patient receive a service?'**
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 
-* identifier contains businessIdentifier 1..1 MS
+* identifier contains businessIdentifier 0..1 MS
 * identifier[businessIdentifier].type.coding.code = #RI
 * identifier[businessIdentifier].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 
@@ -39,7 +39,7 @@ It answers the question: **'Where can the patient receive a service?'**
 * identifier[businessIdentifier].value 1..1
 * providedBy 1..1 MS
 * providedBy ^short = "Organization that provides the healthcare service"
-* providedBy only Reference(Organization)
+* providedBy only Reference
 * providedBy.display 1..1 MS
 * providedBy.display ^short = "Name of the organization that provides the healthcare service"
 
@@ -65,7 +65,7 @@ It answers the question: **'Where can the patient receive a service?'**
 
 * contained 0..* MS
 * contained ^short = "Resources contained within the healthcare service resource"
-* contained only Location
+* contained only Location or Organization
 
 * characteristic 0..* MS
 

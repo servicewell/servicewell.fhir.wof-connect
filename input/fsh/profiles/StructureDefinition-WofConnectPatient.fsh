@@ -40,8 +40,6 @@ Description: "Patient returned by WOF Connect integrations."
 
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[0].path = "type.text"
-* identifier ^slicing.discriminator[1].type = #value
-* identifier ^slicing.discriminator[1].path = "type.coding.code"
 
 * identifier ^slicing.rules = #open
 
