@@ -51,6 +51,7 @@ Description: "Grouped characteristics for a HealthcareService: Scheduling, API a
 * extension[scheduling].extension[schedulingAvailability].valueCodeableConcept ^short = "Clinic-level scheduling capabilities, such as cancellation and rescheduling availability."
 * extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.system 1..1
 * extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.system = "http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/wc-characteristic" (exactly)
+* extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.code 1..1
 
 // ----- Workflow -----
 * extension[workflow].extension 0..*
@@ -61,11 +62,13 @@ Description: "Grouped characteristics for a HealthcareService: Scheduling, API a
     healthcareServiceAvailable 0..1 
 
 // Exempel-typer i API
+* extension[workflow].extension[deviceBookingAvailable].value[x] only boolean
 * extension[workflow].extension[deviceBookingAvailable].valueBoolean 1..1
 * extension[workflow].extension[deviceBookingAvailable].valueBoolean ^short = "Indicates that devices (e.g., dental chairs) are directly bookable resources."
 * extension[workflow].extension[deviceBookingAvailable].valueBoolean ^definition = "When set to true, this flag indicates that individual devices — such as dental chairs — can be booked directly. The scheduling service SHALL expose available devices in `Schedule` resources and include device references in corresponding `Slot` resources. When creating an appointment, the booking system SHALL allow specifying the device as a participant in the `Appointment` resource."
 * extension[workflow].extension[deviceBookingAvailable] ^comment = "This element enables device-level scheduling (e.g., dental chairs). See obligations for actor ServerWithDeviceBooking"
 
+* extension[workflow].extension[healthcareServiceAvailable].value[x] only boolean
 * extension[workflow].extension[healthcareServiceAvailable].valueBoolean 1..1
 * extension[workflow].extension[healthcareServiceAvailable].valueBoolean ^short =  "Indicates whether the source PMS provides first-class HealthcareService entities with booking rules."
 * extension[workflow].extension[healthcareServiceAvailable] ^comment = "Typical PMS behavior: when available, online booking policies (eligibility, time windows, service types) are configured in the PMS and should be reflected in the mapped HealthcareService. When not available, the integration owns HealthcareService creation and policy enforcement."
@@ -79,5 +82,6 @@ Description: "Grouped characteristics for a HealthcareService: Scheduling, API a
     requiresNativeIdPLogin  0..1 
 
 // Exempel-typer i Security
+* extension[security].extension[requiresNativeIdPLogin].value[x] only boolean
 * extension[security].extension[requiresNativeIdPLogin].valueBoolean  0..1
 * extension[security].extension[requiresNativeIdPLogin].valueBoolean  ^short = "Identity provider used for patient login (e.g., BankID)."
