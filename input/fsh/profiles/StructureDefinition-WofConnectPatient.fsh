@@ -32,7 +32,7 @@ Description: "Patient returned by WOF Connect integrations."
 * identifier.value ^short = "Value of the identifier"
 * identifier.system 0..1
 * identifier.system ^short = "System that issued the identifier (e.g. hospital, government)"
-* identifier.type.coding 1..* MS
+* identifier.type.coding 0..* MS
 * identifier.type.coding ^short = "Coded type of the identifier"
 * identifier insert Obligation($serverActor, #SHOULD:populate)
 
