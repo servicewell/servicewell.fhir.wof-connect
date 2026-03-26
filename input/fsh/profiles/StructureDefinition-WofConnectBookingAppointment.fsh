@@ -31,7 +31,7 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 * reasonCode 0..*
 * reasonCode.text 0..1
 
-* participant 2..2
+* participant 2..3
 * participant.actor 1..1
 * participant.status 1..1
 

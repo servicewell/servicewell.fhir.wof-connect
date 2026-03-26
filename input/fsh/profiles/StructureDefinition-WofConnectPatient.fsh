@@ -84,10 +84,21 @@ Description: "Patient returned by WOF Connect integrations."
 * telecom insert Obligation($serverActor, #SHOULD:populate-if-known)
 
 
-* extension 1..* MS
-* extension ^short = "Consent to receive marketing communication"
-* extension.value[x] 0..1
-* extension.value[x] ^short = "Value of the consent to marketing communication extension"
-* extension insert Obligation($serverActor, #SHOULD:populate)
+* extension contains PortalConsentToMarketing named consentToMarketing 0..1 MS
+* extension[consentToMarketing] insert Obligation($serverActor, #SHOULD:populate)
+
+
+Extension: PortalConsentToMarketing
+Id: ext-consent-to-marketing
+Title: "Portal Consent To Marketing"
+Description: "Patient consent to marketing communication."
+* ^status = #draft
+* ^context[0].type = #element
+* ^context[0].expression = "Patient"
+* ^url = "http://portal.wof.purified.link/fhir/StructureDefinition/extConsentToMarketing"
+* value[x] only boolean
+* valueBoolean 1..1 MS
+
+
 
 
