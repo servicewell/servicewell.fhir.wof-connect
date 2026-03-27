@@ -9,7 +9,7 @@ name: WOF-Connect
 title: WOF Connect📍
 description: Service Wells guide for connecting your system to Service Well Portal, delivering smart ways for dental care scheduling.
 status: draft # draft | active | retired | unknown
-version: 0.1.1
+version: 0.1.3
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build [WIP]

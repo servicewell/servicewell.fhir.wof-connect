@@ -52,6 +52,7 @@ Description: "Grouped characteristics for a HealthcareService: Scheduling, API a
 * extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.system 1..1
 * extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.system = "http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/wc-characteristic" (exactly)
 * extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.code 1..1
+* extension[scheduling].extension[schedulingAvailability].valueCodeableConcept.coding.code from VsWCCharacteristic (required)
 
 // ----- Workflow -----
 * extension[workflow].extension 0..*
