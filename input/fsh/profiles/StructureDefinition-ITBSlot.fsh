@@ -1,4 +1,4 @@
-Profile: ITBSlot
+/* Profile: ITBSlot
 Parent: Slot
 Title: "ITB Slot"
 Description: "A slot profile in ITB"
@@ -30,3 +30,4 @@ Description: "A slot profile in ITB"
 
 
 
+*/

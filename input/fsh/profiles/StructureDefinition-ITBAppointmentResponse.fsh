@@ -1,4 +1,4 @@
-Profile: ITBAppointmentResponse
+/* Profile: ITBAppointmentResponse
 Parent: AppointmentResponse
 Title: "ITB AppointmentResponse"
 Description: "ITBAppointmentResponse is used to handle  .."
@@ -22,3 +22,4 @@ Description: "ITBAppointmentResponse is used to handle  .."
 // ParticipantStatus is repeated in code
 * participantStatus 1..1 MS
 * participantStatus ^short = "accepted | declined | tentative | needs-action"
+*/

@@ -2,7 +2,13 @@
 Extension: WofConnectCharacteristic
 Id: wofconnect-characteristic
 Title: "WofConnect Characteristic"
-Description: "Grouped characteristics for a HealthcareService: Scheduling, API and Security."
+Description: """Composite extension structuring key characteristics for HealthcareService and Appointment.
+ Contains three main areas: 
+ - 'scheduling' (booking rules and availability), 
+ - 'workflow' (API and resource functionality),  
+ - 'security' (security requirements, e.g., login). 
+ 
+ Enables standardized and machine-readable communication of clinic booking policies, API capabilities, and security level."""
 * ^status = #active
 
 // Var extensionen får sitta
