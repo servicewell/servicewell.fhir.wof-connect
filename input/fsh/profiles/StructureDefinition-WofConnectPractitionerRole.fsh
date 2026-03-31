@@ -29,7 +29,7 @@ It answers the question: __“In which role, at which service location, and unde
 * practitioner.reference 0..1 MS
 * practitioner.display 0..1 MS
 
-* organization 0..1 MS
+* organization 1..1 MS
 * organization only Reference(WofConnectBillingOrganization)
 * organization ^short = "The organization (e.g. business, cost location) that has the practitioner role"
 * organization.reference insert Obligation($clientActor, #SHOULD:populate)
