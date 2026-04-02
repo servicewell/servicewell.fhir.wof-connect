@@ -13,8 +13,8 @@ Usage: #example
 * name = "Akut - vuxen"
 * title = "Akut - vuxen"
 * description = "Akuttid för vuxna patienter"
-* code.coding[0] = $service-type#akut "Akut - vuxen"
-//* code.coding[+] = $service-type-id#696b3685-dd39-4781-b410-0e700a8ba010 "Akut - vuxen" //riktig data från frenda
+* code.coding[0].system = "http://example.org"
+* code.coding[0].code = #akut "Akut - vuxen" //riktig data från frenda
 * code.text = "Akuttid för vuxna patienter"
 * timingDuration = 30 'min' "minute"
 * participant.type = #practitioner

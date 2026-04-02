@@ -13,8 +13,8 @@ Usage: #example
 * name = "Airflow"
 * title = "Airflow"
 * description = "Airflow"
-* code.coding[0] = $service-type#profylax "Airflow"
-//* code.coding[+] = $service-type-id#0a2a4f2a-aa05-4cfd-a4ae-cd6ebcd95df4 "Airflow" //riktig data från frenda
+* code.coding[0].code = #profylax "Airflow"
+* code.coding[0].system = "http://example.org"
 * code.text = "Airflow"
 * timingDuration = 30 'min' "minute"
 * participant.type = #practitioner
