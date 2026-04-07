@@ -1,7 +1,7 @@
 Profile: WofConnectBillingOrganization
 Parent: Organization
 Id: wof-connect-billing-organization
-Title: "Wof Connect Economy Organization"
+Title: "Wof Connect Billing Organization"
 Description: """
 **BillingOrganization** represents the entity that is financially responsible for healthcare services.
 
