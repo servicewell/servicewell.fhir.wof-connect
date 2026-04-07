@@ -13,8 +13,7 @@ Usage: #example
 * name = "Akut - vuxen"
 * title = "Akut - vuxen"
 * description = "Akuttid för vuxna patienter"
-* code.coding[0].system = "http://example.org"
-* code.coding[0].code = #akut "Akut - vuxen" //riktig data från frenda
+* code.coding[serviceTypeId].code = #akut
 * code.text = "Akuttid för vuxna patienter"
 * timingDuration = 30 'min' "minute"
 * participant.type = #practitioner
@@ -31,10 +30,3 @@ Usage: #inline
 * status = #current
 * mode = #working
 * entry.item = Reference(HealthcareService/48e428b0-fb37-4224-84df-5783a301a9da-test) "Service Well AB"
-
-// =======================================================
-// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
-// Remove when proper mapping is implemented
-// =======================================================
-
-* code.coding[+] = $service-type#dummy-id "Temporary dummy to satisfy fixed system"

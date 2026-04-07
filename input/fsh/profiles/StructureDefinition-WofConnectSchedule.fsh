@@ -25,14 +25,14 @@ It answers the question: __“Who is working in the coming weeks, and who can po
 
 * serviceType contains service-type-id 1..1 MS 
 * serviceType[service-type-id] ^short = "Service Type Identifier Code and Endpoint Id Code"
-* serviceType[service-type-id].coding 2..2
+* serviceType[service-type-id].coding 1..2
 * serviceType.text 0..1
 * serviceType.text insert Obligation($serverActor, #SHOULD:populate)
 
 * serviceType[service-type-id].coding ^slicing.discriminator.type = #value
 * serviceType[service-type-id].coding ^slicing.discriminator.path = "system"
 * serviceType[service-type-id].coding ^slicing.rules = #open
-* serviceType[service-type-id].coding contains st-id 1..1 MS and ep-id 1..1 MS
+* serviceType[service-type-id].coding contains st-id 1..1 MS and ep-id 0..1 MS
 * serviceType[service-type-id].coding[st-id] ^short = "Service Type Identifier Code, e.g., Treatment.Id, ActivityDefinition.Id, used when calling the Appintment API"
 * serviceType[service-type-id].coding[st-id].system 1..1 MS
 * serviceType[service-type-id].coding[st-id].system = "http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/service-type-id"

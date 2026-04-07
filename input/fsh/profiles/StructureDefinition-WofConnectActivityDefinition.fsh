@@ -1,7 +1,4 @@
 
-Alias: $ucum = http://unitsofmeasure.org
-Alias: $csPractitionerRole = http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/practitioner-role
-
 Profile: WofConnectActivityDefinition
 Parent: ActivityDefinition
 Id: wof-connect-activitydefinition
@@ -38,6 +35,8 @@ It answers the question: __“What service is the patient booking?”__
 * code ^short = "Service type being offered"
 * code.coding 1..* MS
 * code.coding ^short = "Service type coding"
+* code.coding.code 1..1 MS
+
 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
@@ -45,14 +44,17 @@ It answers the question: __“What service is the patient booking?”__
 * code.coding ^slicing.description = ""
 * code.coding ^slicing.ordered = false
 
-* code.coding contains serviceTypeId 0..1 MS and serviceType 0..1 MS
+* code.coding contains serviceTypeId 1..1 MS and serviceType 0..1 MS
 
-* code.coding[serviceTypeId].system = "http://canonical.fhir.link/servicewell/wof-connect/NamingSystem/service-type-id"
+* code.coding[serviceTypeId].system = "$service-type-id"
+* code.coding[serviceTypeId].system ^short = "Type of identifersystem for service type."
+* code.coding[serviceTypeId].code ^short = "Code for service type as recceived from sourcesystem. e.g primary key in db"
+
+
 * code.coding[serviceType].system = Canonical(CSServiceType)
-* code.coding.system 1..1 MS
-* code.coding.system ^short = "Coding system for service type"
-* code.coding.code 1..1 MS
-* code.coding.code ^short = "Service type code"
+* code.coding[serviceType].system ^short = "Coding system for service type"
+* code.coding[serviceType].code ^short = "Service type code"
+
 * code.coding.display 0..1
 * code.coding.display ^short = "Display for the service type code"
 * code.text 0..1 MS

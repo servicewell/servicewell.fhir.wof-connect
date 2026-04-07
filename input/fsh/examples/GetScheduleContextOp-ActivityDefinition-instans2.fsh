@@ -1,7 +1,4 @@
-Alias: $pms-system = http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/pms-system
-Alias: $service-type = http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/service-type
-Alias: $service-type-id = http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/service-type-id
-Alias: $practitioner-role = http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/practitioner-role
+
 
 Instance: 0a2a4f2a-aa05-4cfd-a4ae-cd6ebcd95df4
 InstanceOf: WofConnectActivityDefinition
@@ -13,8 +10,7 @@ Usage: #example
 * name = "Airflow"
 * title = "Airflow"
 * description = "Airflow"
-* code.coding[0].code = #profylax "Airflow"
-* code.coding[0].system = "http://example.org"
+* code.coding[serviceTypeId].code = #profylax
 * code.text = "Airflow"
 * timingDuration = 30 'min' "minute"
 * participant.type = #practitioner
@@ -31,10 +27,3 @@ Usage: #inline
 * status = #current
 * mode = #working
 * entry.item = Reference(HealthcareService/9bef346f-7264-4f96-86cd-3f0e7f9186bb) "Södertandläkarna Bågen"
-
-// =======================================================
-// TEMPORARY DUMMY DATA TO SATISFY REQUIRED SLICES
-// Remove when proper mapping is implemented
-// =======================================================
-
-* code.coding[+] = $service-type#dummy-id "Temporary dummy to satisfy fixed system"

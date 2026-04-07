@@ -12,12 +12,12 @@ Usage: #example
 * entry[0].resource = 1dec61fe-f796-8b90-085c-931826bd8f29
 * entry[+].resource = f1922a76-e0b8-f2c0-9c55-10c2879aaace
 * entry[+].resource = 6433400d-8272-0ec6-9606-19823684baf9
-* entry[+].resource = 5f3d23b9-3046-1e04-6b78-6b4fcaf53590
+* entry[+].resource = 35699045-ba45-270e-6fee-701c7d541f75
 * entry[+].resource = e32a4909-5e87-ab6b-456a-473a55901138
 * entry[+].resource = 5e90751d-f4ef-df23-f1cb-df1b3fd754d7
 * entry[+].resource = 50898135-9ee0-9c01-9e41-ae6dc74ff49c
 * entry[+].resource = 756a3b3b-1a52-b5ed-883d-d3b4e26365fe
-* entry[+].resource = 00cddac1-5eb8-ae67-31fb-82cb503cbd5d
+* entry[+].resource = 37bfa310-e3bb-0813-d79e-1ffc996c1250
 * entry[+].resource = 6bb94713-1635-746c-8798-2e32cab95164
 * entry[+].resource = 087b6d3c-adf4-bd21-4be9-4d7ff54668dd
 * entry[+].resource = 02920f8c-b5ac-b66d-cb2e-462cac8edc9b
@@ -25,42 +25,51 @@ Usage: #example
 * entry[+].resource = f1d2977b-e70a-40e6-63eb-5d840de990d7
 * entry[+].resource = 588b76f0-4ebb-a5de-8126-91b7f95d322c
 * entry[+].resource = 1800452f-1ef3-450e-2afc-23420582ae1d
+* entry[+].resource = 200a4472-40f5-ac75-43f5-1a2cf0dbb2a1
 * entry[+].resource = c11d86cc-1f39-891e-32a9-271671868619
 * entry[+].resource = 1b7fc824-2d0f-7400-1e8e-3e0fedf8dba1
 * entry[+].resource = 286a50a6-a713-38ff-0454-be11e97686e9
+* entry[+].resource = 6ace0bf5-9b14-7778-76f9-d5bba12156b1
 * entry[+].resource = 8dd105f4-041e-961f-ab8d-031f7d7fd22e
 * entry[+].resource = bf51ca3f-26e4-5072-76d7-1a6a70e98ed2
 * entry[+].resource = 4868a0b5-c99f-143b-9d2f-e9a580c1a6bf
 * entry[+].resource = 2548a5f5-ddb7-02ab-8a69-6518655f67a7
+* entry[+].resource = 1ec7f0d6-c8f0-458e-e4b3-a2118fcb83b0
 * entry[+].resource = fdee9865-6f36-3042-f3d0-34d6b9cefa93
 * entry[+].resource = 48ae9c63-6296-6951-14a6-58c50b4f1c55
 * entry[+].resource = c6eb0350-7739-60e2-527b-60b9453326a3
+* entry[+].resource = c863d793-693d-9ece-e705-4a2f509ffb8e
 * entry[+].resource = e91fde27-6dc8-a341-6db0-38141992edeb
 * entry[+].resource = 2f05f6ea-4fc2-fcc6-7277-f9bc0b3e713a
 * entry[+].resource = 378a0557-3de3-e676-a23b-258f1875710a
 * entry[+].resource = 2cc7d95d-624a-b391-73d7-494fac31f431
+* entry[+].resource = 2e09a584-5b4a-e96f-68fd-523fb2fc917d
 * entry[+].resource = 8401e592-a5c8-97f4-435f-0a32b7e82a76
 * entry[+].resource = 56bd02ec-0dd7-9d94-bcdb-21c6f96af4e3
 * entry[+].resource = 05ec71b7-a129-f33e-4059-fe8878c98595
 * entry[+].resource = 4c0d04d6-b088-6b39-c18d-469745217643
 * entry[+].resource = 601d2433-31bd-c416-9f41-061b3486315c
 * entry[+].resource = 3841fd23-fd38-bd7c-998b-4538d04caf68
+* entry[+].resource = c1017363-9283-92d8-fa5c-4e63a4a1349f
 * entry[+].resource = ef0d75c6-0818-c8db-8782-78f333c9affc
 * entry[+].resource = dc8ac9f7-e55e-0b4f-d626-14e41998e7c7
 * entry[+].resource = d317801a-4c03-6f8f-9d4f-e22bb9d2086c
+* entry[+].resource = 713e9d5a-c4af-1576-26b1-85f92d3fd345
 * entry[+].resource = 3b6dd390-aa8d-7781-92b8-747900583ea9
 * entry[+].resource = fd67df68-be41-93a4-f935-3845b4bbdacd
 * entry[+].resource = d05db3db-f2dc-ba9c-c4c0-a8eeb2c565f0
-* entry[+].resource = f6054b2a-ba4a-c345-61cc-9ad2771df363
+* entry[+].resource = 461999a9-4836-a697-717b-85a7c16c1db1
 * entry[+].resource = 93a51eaf-01c5-8eed-f302-988104b6ba50
 * entry[+].resource = c4b6f187-0b99-8811-cd79-b64c2bdb5bad
 * entry[+].resource = ccb589ab-5006-52dd-14a4-fd2db787c78e
 * entry[+].resource = 6b758124-f067-ee04-0853-46246131fef1
+* entry[+].resource = 92b0ffbe-da64-c107-1c9e-511cf893a02f
 * entry[+].resource = 753fca17-a166-7b0a-82eb-a873036bd260
 * entry[+].resource = 27de6a31-69af-8d79-772e-ddc1da6f0fdf
 * entry[+].resource = 8a7dfa29-5714-ae3b-43dc-204ef31a4b2d
 * entry[+].resource = dd654f27-2312-afbb-fdb5-257935ee76de
 * entry[+].resource = 540b6294-724c-86c4-81bc-dbed109c7b1b
+* entry[+].resource = 9d6b16b3-416b-2e85-8746-dca7b81467f1
 * entry[+].resource = f737b920-b4f0-fef6-1bfd-8f6e257043c6
 * entry[+].resource = 815e2542-744f-a578-2c13-aa854f3f3342
 * entry[+].resource = e9d2c76a-16bd-e694-1d03-fbd8922c292d
@@ -69,21 +78,24 @@ Usage: #example
 * entry[+].resource = 387f2012-d824-65bd-d405-0b0b1220cb94
 * entry[+].resource = 45de40c9-41c0-7bb3-3083-0acb63bfdff2
 * entry[+].resource = 9a7490fe-e3a5-2e0c-8004-db58e948f21b
+* entry[+].resource = 7e98b13b-6d6a-59e1-e4c1-b7ad9a4f118e
 * entry[+].resource = 23acbe86-e2e2-c90c-052f-46de0f605291
 * entry[+].resource = e3b4e200-63ce-a20d-a735-120d21a8ee63
 * entry[+].resource = 89b8e122-fc6b-d6f2-04f0-7d104b245538
 * entry[+].resource = 65b7816b-77ae-f2fe-ae05-130954803054
-* entry[+].resource = f71fef76-5003-9e99-6c46-31292f40928d
+* entry[+].resource = 38263054-88f9-9700-b721-a15b17a379f1
 * entry[+].resource = c998cd9a-dab3-4e97-f860-dc25617f0b6f
 * entry[+].resource = 4b364b01-5d61-fca3-e856-cb0fe5fc711c
 * entry[+].resource = 7e88a326-1f92-7ee3-cc76-51581917994c
 * entry[+].resource = d65d3ef7-9759-e395-5626-2f086766eb5f
 * entry[+].resource = 6db95a7b-2ab2-6218-2da7-84b40fc1bfc2
+* entry[+].resource = 5252b396-8de4-900c-6ef7-4811413f5366
 * total = 90
 
 Instance: 1dec61fe-f796-8b90-085c-931826bd8f29
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Tandhygienist Lotta Roos Lundin"
 * telecom.system = #url
@@ -103,14 +115,17 @@ Usage: #inline
 * meta.tag = $pms-system#muntra
 * meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-schedule"
 * actor[0] = Reference(1dec61fe-f796-8b90-085c-931826bd8f29) "Tandhygienist Lotta Roos Lundin"
-* actor[+] = Reference(6433400d-8272-0ec6-9606-19823684baf9) "Lotta RoosLundin"
-* actor[+] = Reference(5f3d23b9-3046-1e04-6b78-6b4fcaf53590) "Tandhygienist"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Lotta RoosLundin"
+* actor[+] = Reference(PractitionerRole/5f3d23b9-3046-1e04-6b78-6b4fcaf53590) "Tandhygienist"
+* actor[+] = Reference(35699045-ba45-270e-6fee-701c7d541f75) "Lotta RoosLundin"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 6433400d-8272-0ec6-9606-19823684baf9
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "133"
 * active = true
@@ -119,7 +134,7 @@ Usage: #inline
 * name.given = "Lotta"
 * gender = #female
 
-Instance: 5f3d23b9-3046-1e04-6b78-6b4fcaf53590
+Instance: 35699045-ba45-270e-6fee-701c7d541f75
 InstanceOf: PractitionerRole
 Usage: #inline
 * meta.tag = $pms-system#muntra
@@ -128,12 +143,14 @@ Usage: #inline
 * period.start = "1996-07-07T00:00:00.000Z"
 * code = $practitioner-role#dental-hygienist "dental-hygienist"
 * code.text = "Tandhygienist"
-* practitioner = Reference(Practitioner/2) "Yakov  Dvoinykh"
-* organization = Reference(Organization/2) "Muntra, test"
+* practitioner = Reference(Practitioner/133) "Lotta RoosLundin"
+* organization = Reference(Organization/137) "Tandhygienist Lotta Roos Lundin"
+* healthcareService = Reference(HealthcareService/137) "Tandhygienist Lotta Roos Lundin"
 
 Instance: e32a4909-5e87-ab6b-456a-473a55901138
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Muntra Danmark A/S"
 * telecom.system = #phone
@@ -165,14 +182,17 @@ Usage: #inline
 * serviceType = $service-type-id#2 "Basundersökning av tandläkare"
 * serviceType.text = "Basundersökning av tandläkare"
 * actor[0] = Reference(e32a4909-5e87-ab6b-456a-473a55901138) "Muntra Danmark A/S"
-* actor[+] = Reference(756a3b3b-1a52-b5ed-883d-d3b4e26365fe) "Niels Rask"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Niels Rask"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(37bfa310-e3bb-0813-d79e-1ffc996c1250) "Niels Rask"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 756a3b3b-1a52-b5ed-883d-d3b4e26365fe
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "4"
 * active = true
@@ -182,7 +202,7 @@ Usage: #inline
 * name.prefix = "Overtannlege"
 * gender = #male
 
-Instance: 00cddac1-5eb8-ae67-31fb-82cb503cbd5d
+Instance: 37bfa310-e3bb-0813-d79e-1ffc996c1250
 InstanceOf: PractitionerRole
 Usage: #inline
 * meta.tag = $pms-system#muntra
@@ -191,12 +211,14 @@ Usage: #inline
 * period.start = "1996-07-07T00:00:00.000Z"
 * code = $practitioner-role#dentist "dentist"
 * code.text = "Tandlæge"
-* practitioner = Reference(Practitioner/2274) "Mathias Eklöf"
-* organization = Reference(Organization/849) "OC testmiljö"
+* practitioner = Reference(Practitioner/4) "Niels Rask"
+* organization = Reference(Organization/796) "Muntra Danmark A/S"
+* healthcareService = Reference(HealthcareService/796) "Muntra Danmark A/S"
 
 Instance: 6bb94713-1635-746c-8798-2e32cab95164
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Muntra, test"
 * telecom[0].system = #phone
@@ -279,14 +301,29 @@ Usage: #inline
 * serviceType[+] = $service-type-id#3 "Basundersökning av tandhygienist"
 * serviceType[=].text = "Basundersökning av tandhygienist"
 * actor[0] = Reference(6bb94713-1635-746c-8798-2e32cab95164) "Muntra, test"
-* actor[+] = Reference(756a3b3b-1a52-b5ed-883d-d3b4e26365fe) "Niels Rask"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Niels Rask"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(200a4472-40f5-ac75-43f5-1a2cf0dbb2a1) "Niels Rask"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
+
+Instance: 200a4472-40f5-ac75-43f5-1a2cf0dbb2a1
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/4) "Niels Rask"
+* organization = Reference(Organization/2) "Muntra, test"
+* healthcareService = Reference(HealthcareService/2) "Muntra, test"
 
 Instance: c11d86cc-1f39-891e-32a9-271671868619
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Muntra 2 AB"
 * telecom[0].system = #phone
@@ -320,14 +357,29 @@ Usage: #inline
 * serviceType = $service-type-id#2 "Basundersökning av tandläkare"
 * serviceType.text = "Basundersökning av tandläkare"
 * actor[0] = Reference(c11d86cc-1f39-891e-32a9-271671868619) "Muntra 2 AB"
-* actor[+] = Reference(756a3b3b-1a52-b5ed-883d-d3b4e26365fe) "Niels Rask"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Niels Rask"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(6ace0bf5-9b14-7778-76f9-d5bba12156b1) "Niels Rask"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
+
+Instance: 6ace0bf5-9b14-7778-76f9-d5bba12156b1
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/4) "Niels Rask"
+* organization = Reference(Organization/768) "Muntra 2 AB"
+* healthcareService = Reference(HealthcareService/768) "Muntra 2 AB"
 
 Instance: 8dd105f4-041e-961f-ab8d-031f7d7fd22e
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Företagsnamn #1 - nr1"
 * telecom.system = #email
@@ -368,14 +420,29 @@ Usage: #inline
 * serviceType[+] = $service-type-id#5 "fgsdfgs"
 * serviceType[=].text = "fgsdfgs"
 * actor[0] = Reference(8dd105f4-041e-961f-ab8d-031f7d7fd22e) "Företagsnamn #1 - nr1"
-* actor[+] = Reference(756a3b3b-1a52-b5ed-883d-d3b4e26365fe) "Niels Rask"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Niels Rask"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(1ec7f0d6-c8f0-458e-e4b3-a2118fcb83b0) "Niels Rask"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
+
+Instance: 1ec7f0d6-c8f0-458e-e4b3-a2118fcb83b0
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/4) "Niels Rask"
+* organization = Reference(Organization/1) "Företagsnamn #1 - nr1"
+* healthcareService = Reference(HealthcareService/1) "Företagsnamn #1 - nr1"
 
 Instance: fdee9865-6f36-3042-f3d0-34d6b9cefa93
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Muntra AS"
 * telecom[0].system = #phone
@@ -414,10 +481,24 @@ Usage: #inline
 * serviceType = $service-type-id#2 "Basundersökning av tandläkare"
 * serviceType.text = "Basundersökning av tandläkare"
 * actor[0] = Reference(fdee9865-6f36-3042-f3d0-34d6b9cefa93) "Muntra AS"
-* actor[+] = Reference(756a3b3b-1a52-b5ed-883d-d3b4e26365fe) "Niels Rask"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Niels Rask"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(c863d793-693d-9ece-e705-4a2f509ffb8e) "Niels Rask"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
+
+Instance: c863d793-693d-9ece-e705-4a2f509ffb8e
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/4) "Niels Rask"
+* organization = Reference(Organization/785) "Muntra AS"
+* healthcareService = Reference(HealthcareService/785) "Muntra AS"
 
 Instance: e91fde27-6dc8-a341-6db0-38141992edeb
 InstanceOf: ActivityDefinition
@@ -445,14 +526,17 @@ Usage: #inline
 * serviceType[+] = $service-type-id#3 "Basundersökning av tandhygienist"
 * serviceType[=].text = "Basundersökning av tandhygienist"
 * actor[0] = Reference(6bb94713-1635-746c-8798-2e32cab95164) "Muntra, test"
-* actor[+] = Reference(2cc7d95d-624a-b391-73d7-494fac31f431) "Yakov  Dvoinykh"
-* actor[+] = Reference(5f3d23b9-3046-1e04-6b78-6b4fcaf53590) "Tandhygienist"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Yakov  Dvoinykh"
+* actor[+] = Reference(PractitionerRole/5f3d23b9-3046-1e04-6b78-6b4fcaf53590) "Tandhygienist"
+* actor[+] = Reference(2e09a584-5b4a-e96f-68fd-523fb2fc917d) "Yakov  Dvoinykh"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 2cc7d95d-624a-b391-73d7-494fac31f431
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "2"
 * active = true
@@ -461,9 +545,23 @@ Usage: #inline
 * name.given = "Yakov "
 * gender = #male
 
+Instance: 2e09a584-5b4a-e96f-68fd-523fb2fc917d
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dental-hygienist "dental-hygienist"
+* code.text = "Tandhygienist"
+* practitioner = Reference(Practitioner/2) "Yakov  Dvoinykh"
+* organization = Reference(Organization/2) "Muntra, test"
+* healthcareService = Reference(HealthcareService/2) "Muntra, test"
+
 Instance: 8401e592-a5c8-97f4-435f-0a32b7e82a76
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Tandcentralen Sverige AB"
 * telecom[0].system = #phone
@@ -521,14 +619,17 @@ Usage: #inline
 * serviceType[+] = $service-type-id#1 "Botox-behandling"
 * serviceType[=].text = "Botox-behandling"
 * actor[0] = Reference(8401e592-a5c8-97f4-435f-0a32b7e82a76) "Tandcentralen Sverige AB"
-* actor[+] = Reference(3841fd23-fd38-bd7c-998b-4538d04caf68) "Sermed Majid"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Sermed Majid"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(c1017363-9283-92d8-fa5c-4e63a4a1349f) "Sermed Majid"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 3841fd23-fd38-bd7c-998b-4538d04caf68
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "65"
 * active = true
@@ -537,9 +638,23 @@ Usage: #inline
 * name.given = "Sermed"
 * gender = #male
 
+Instance: c1017363-9283-92d8-fa5c-4e63a4a1349f
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/65) "Sermed Majid"
+* organization = Reference(Organization/64) "Tandcentralen Sverige AB"
+* healthcareService = Reference(HealthcareService/64) "Tandcentralen Sverige AB"
+
 Instance: ef0d75c6-0818-c8db-8782-78f333c9affc
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Klinik A"
 * location = Reference(loc-ef0d75c6-0818-c8db-8782-78f333c9affc)
@@ -568,10 +683,24 @@ Usage: #inline
 * serviceType = $service-type-id#2 "Basundersökning av tandläkare"
 * serviceType.text = "Basundersökning av tandläkare"
 * actor[0] = Reference(ef0d75c6-0818-c8db-8782-78f333c9affc) "Klinik A"
-* actor[+] = Reference(3841fd23-fd38-bd7c-998b-4538d04caf68) "Sermed Majid"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Sermed Majid"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(713e9d5a-c4af-1576-26b1-85f92d3fd345) "Sermed Majid"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
+
+Instance: 713e9d5a-c4af-1576-26b1-85f92d3fd345
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/65) "Sermed Majid"
+* organization = Reference(Organization/880) "Klinik A"
+* healthcareService = Reference(HealthcareService/880) "Klinik A"
 
 Instance: 3b6dd390-aa8d-7781-92b8-747900583ea9
 InstanceOf: ActivityDefinition
@@ -589,14 +718,17 @@ Usage: #inline
 * serviceType = $service-type-id#2 "Basundersökning av tandläkare"
 * serviceType.text = "Basundersökning av tandläkare"
 * actor[0] = Reference(6bb94713-1635-746c-8798-2e32cab95164) "Muntra, test"
-* actor[+] = Reference(d05db3db-f2dc-ba9c-c4c0-a8eeb2c565f0) "Dental Test"
-* actor[+] = Reference(f6054b2a-ba4a-c345-61cc-9ad2771df363) "Tandsköterska"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Dental Test"
+* actor[+] = Reference(PractitionerRole/f6054b2a-ba4a-c345-61cc-9ad2771df363) "Tandsköterska"
+* actor[+] = Reference(461999a9-4836-a697-717b-85a7c16c1db1) "Dental Test"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: d05db3db-f2dc-ba9c-c4c0-a8eeb2c565f0
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "1791"
 * active = true
@@ -605,7 +737,7 @@ Usage: #inline
 * name.given = "Dental"
 * gender = #male
 
-Instance: f6054b2a-ba4a-c345-61cc-9ad2771df363
+Instance: 461999a9-4836-a697-717b-85a7c16c1db1
 InstanceOf: PractitionerRole
 Usage: #inline
 * meta.tag = $pms-system#muntra
@@ -616,10 +748,12 @@ Usage: #inline
 * code.text = "Tandsköterska"
 * practitioner = Reference(Practitioner/1791) "Dental Test"
 * organization = Reference(Organization/2) "Muntra, test"
+* healthcareService = Reference(HealthcareService/2) "Muntra, test"
 
 Instance: 93a51eaf-01c5-8eed-f302-988104b6ba50
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "24 tänder AB"
 * location = Reference(loc-93a51eaf-01c5-8eed-f302-988104b6ba50)
@@ -648,14 +782,17 @@ Usage: #inline
 * serviceType = $service-type-id#2 "Basundersökning av tandläkare"
 * serviceType.text = "Basundersökning av tandläkare"
 * actor[0] = Reference(93a51eaf-01c5-8eed-f302-988104b6ba50) "24 tänder AB"
-* actor[+] = Reference(6b758124-f067-ee04-0853-46246131fef1) "Andrii Mudrak"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Andrii Mudrak"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(92b0ffbe-da64-c107-1c9e-511cf893a02f) "Andrii Mudrak"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 6b758124-f067-ee04-0853-46246131fef1
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "2071"
 * active = true
@@ -663,6 +800,19 @@ Usage: #inline
 * name.family = "Mudrak"
 * name.given = "Andrii"
 * gender = #male
+
+Instance: 92b0ffbe-da64-c107-1c9e-511cf893a02f
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/2071) "Andrii Mudrak"
+* organization = Reference(Organization/155) "24 tänder AB"
+* healthcareService = Reference(HealthcareService/155) "24 tänder AB"
 
 Instance: 753fca17-a166-7b0a-82eb-a873036bd260
 InstanceOf: ActivityDefinition
@@ -700,14 +850,17 @@ Usage: #inline
 * serviceType[+] = $service-type-id#8 "sdfgsdf"
 * serviceType[=].text = "sdfgsdf"
 * actor[0] = Reference(6bb94713-1635-746c-8798-2e32cab95164) "Muntra, test"
-* actor[+] = Reference(540b6294-724c-86c4-81bc-dbed109c7b1b) "Roma Sunichuk"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Roma Sunichuk"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(9d6b16b3-416b-2e85-8746-dca7b81467f1) "Roma Sunichuk"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 540b6294-724c-86c4-81bc-dbed109c7b1b
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "2077"
 * active = true
@@ -716,9 +869,23 @@ Usage: #inline
 * name.given = "Roma"
 * gender = #male
 
+Instance: 9d6b16b3-416b-2e85-8746-dca7b81467f1
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/2077) "Roma Sunichuk"
+* organization = Reference(Organization/2) "Muntra, test"
+* healthcareService = Reference(HealthcareService/2) "Muntra, test"
+
 Instance: f737b920-b4f0-fef6-1bfd-8f6e257043c6
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "Jere Testklinik Testmiljö"
 * telecom[0].system = #phone
@@ -792,14 +959,17 @@ Usage: #inline
 * serviceType[+] = $service-type-id#6 "sdfbsdfg"
 * serviceType[=].text = "sdfbsdfg"
 * actor[0] = Reference(f737b920-b4f0-fef6-1bfd-8f6e257043c6) "Jere Testklinik Testmiljö"
-* actor[+] = Reference(9a7490fe-e3a5-2e0c-8004-db58e948f21b) "Jere Brizic"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Jere Brizic"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(7e98b13b-6d6a-59e1-e4c1-b7ad9a4f118e) "Jere Brizic"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 9a7490fe-e3a5-2e0c-8004-db58e948f21b
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "2161"
 * active = true
@@ -807,6 +977,19 @@ Usage: #inline
 * name.family = "Brizic"
 * name.given = "Jere"
 * gender = #male
+
+Instance: 7e98b13b-6d6a-59e1-e4c1-b7ad9a4f118e
+InstanceOf: PractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/2161) "Jere Brizic"
+* organization = Reference(Organization/840) "Jere Testklinik Testmiljö"
+* healthcareService = Reference(HealthcareService/840) "Jere Testklinik Testmiljö"
 
 Instance: 23acbe86-e2e2-c90c-052f-46de0f605291
 InstanceOf: ActivityDefinition
@@ -834,14 +1017,17 @@ Usage: #inline
 * serviceType[+] = $service-type-id#1 "Botox-behandling"
 * serviceType[=].text = "Botox-behandling"
 * actor[0] = Reference(f737b920-b4f0-fef6-1bfd-8f6e257043c6) "Jere Testklinik Testmiljö"
-* actor[+] = Reference(65b7816b-77ae-f2fe-ae05-130954803054) "Johan Linde"
-* actor[+] = Reference(f71fef76-5003-9e99-6c46-31292f40928d) "Läkare"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Johan Linde"
+* actor[+] = Reference(PractitionerRole/f71fef76-5003-9e99-6c46-31292f40928d) "Läkare"
+* actor[+] = Reference(38263054-88f9-9700-b721-a15b17a379f1) "Johan Linde"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 65b7816b-77ae-f2fe-ae05-130954803054
 InstanceOf: Practitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "2162"
 * active = true
@@ -850,7 +1036,7 @@ Usage: #inline
 * name.given = "Johan"
 * gender = #male
 
-Instance: f71fef76-5003-9e99-6c46-31292f40928d
+Instance: 38263054-88f9-9700-b721-a15b17a379f1
 InstanceOf: PractitionerRole
 Usage: #inline
 * meta.tag = $pms-system#muntra
@@ -861,10 +1047,12 @@ Usage: #inline
 * code.text = "Läkare"
 * practitioner = Reference(Practitioner/2162) "Johan Linde"
 * organization = Reference(Organization/840) "Jere Testklinik Testmiljö"
+* healthcareService = Reference(HealthcareService/840) "Jere Testklinik Testmiljö"
 
 Instance: c998cd9a-dab3-4e97-f860-dc25617f0b6f
 InstanceOf: HealthcareService
 Usage: #inline
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice"
 * active = true
 * name = "OC testmiljö"
 * location = Reference(loc-c998cd9a-dab3-4e97-f860-dc25617f0b6f)
@@ -903,14 +1091,17 @@ Usage: #inline
 * serviceType[+] = $service-type-id#3 "Basundersökning av tandhygienist"
 * serviceType[=].text = "Basundersökning av tandhygienist"
 * actor[0] = Reference(c998cd9a-dab3-4e97-f860-dc25617f0b6f) "OC testmiljö"
-* actor[+] = Reference(6db95a7b-2ab2-6218-2da7-84b40fc1bfc2) "Mathias Eklöf"
-* actor[+] = Reference(00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
-* planningHorizon.start = "2026-03-31"
-* planningHorizon.end = "2026-03-31"
+* actor[+].display = "Mathias Eklöf"
+* actor[+] = Reference(PractitionerRole/00cddac1-5eb8-ae67-31fb-82cb503cbd5d) "Tandlæge"
+* actor[+] = Reference(5252b396-8de4-900c-6ef7-4811413f5366) "Mathias Eklöf"
+* planningHorizon.start = "2026-04-02"
+* planningHorizon.end = "2026-04-02"
 
 Instance: 6db95a7b-2ab2-6218-2da7-84b40fc1bfc2
-InstanceOf: Practitioner
+InstanceOf: WofConnectPractitioner
 Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitioner"
 * identifier.system = "urn:muntra:caregiver-id"
 * identifier.value = "2274"
 * active = true
@@ -918,3 +1109,16 @@ Usage: #inline
 * name.family = "Eklöf"
 * name.given = "Mathias"
 * gender = #male
+
+Instance: 5252b396-8de4-900c-6ef7-4811413f5366
+InstanceOf: WofConnectPractitionerRole
+Usage: #inline
+* meta.tag = $pms-system#muntra
+* meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-practitionerrole"
+* active = true
+* period.start = "1996-07-07T00:00:00.000Z"
+* code = $practitioner-role#dentist "dentist"
+* code.text = "Tandlæge"
+* practitioner = Reference(Practitioner/2274) "Mathias Eklöf"
+* organization = Reference(Organization/849) "OC testmiljö"
+* healthcareService = Reference(HealthcareService/849) "OC testmiljö"
