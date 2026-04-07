@@ -8,6 +8,8 @@ It answers the question: __“In which role, at which service location, and unde
 
 * ^version = "1.0.0"
 * ^status = #active
+* obeys inv-practitionerrole-org-or-healthcareservice
+* obeys inv-practitionerrole-period
 
 * id 1..1 MS
 
@@ -29,7 +31,7 @@ It answers the question: __“In which role, at which service location, and unde
 * practitioner.reference 0..1 MS
 * practitioner.display 0..1 MS
 
-* organization 1..1 MS
+* organization 0..1 MS
 * organization only Reference(WofConnectBillingOrganization)
 * organization ^short = "The organization (e.g. business, cost location) that has the practitioner role"
 * organization.reference insert Obligation($clientActor, #SHOULD:populate)
@@ -63,3 +65,8 @@ Invariant: inv-practitionerrole-period
 Description: "If present, period.end must be on or after period.start"
 Severity: #error
 Expression: "end.empty() or start <= end"
+
+Invariant: inv-practitionerrole-org-or-healthcareservice
+Description: "At least one of organization or healthcareService must be present."
+Severity: #error
+Expression: "organization.exists() or healthcareService.exists()"
