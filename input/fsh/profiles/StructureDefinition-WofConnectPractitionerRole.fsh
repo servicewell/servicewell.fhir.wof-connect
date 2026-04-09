@@ -60,13 +60,14 @@ It answers the question: __“In which role, at which service location, and unde
 * organization insert Obligation($serverActor, #MAY:populate)       
 * code insert Obligation($serverActor, #MAY:populate)   
 
+// ---- Elements not used in this profile - restricted to 0..0 ----
 
-Invariant: inv-practitionerrole-period
-Description: "If present, period.end must be on or after period.start"
-Severity: #error
-Expression: "end.empty() or start <= end"
+// PractitionerRole fields not used
+* identifier 0..0
+* specialty 0..0
+* location 0..0
+* telecom 0..0
+* availableTime 0..0
+* notAvailable 0..0
+* availabilityExceptions 0..0
 
-Invariant: inv-practitionerrole-org-or-healthcareservice
-Description: "At least one of organization or healthcareService must be present."
-Severity: #error
-Expression: "organization.exists() or healthcareService.exists()"

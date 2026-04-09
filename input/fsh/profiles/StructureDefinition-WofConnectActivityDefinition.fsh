@@ -6,7 +6,7 @@ Title: "Wof Connect ActivityDefinition"
 Description: """
 **ActivityDefinition** represents what can be offered and booked as a service.
 
-It answers the question: __“What service is the patient booking?”__
+It answers the question: "What service is the patient booking?"
 
 """
 
@@ -22,9 +22,7 @@ It answers the question: __“What service is the patient booking?”__
 * status 1..1 MS
 * status ^short = "Publication status of this activity definition"
 
-* name 0..1
-* name ^short = "Machine-friendly name"
-* title 0..1
+* title 1..1
 * title ^short = "Human-friendly title"
 * description 0..1 MS
 * description ^short = "Human-readable description of the service"
@@ -46,10 +44,9 @@ It answers the question: __“What service is the patient booking?”__
 
 * code.coding contains serviceTypeId 1..1 MS and serviceType 0..1 MS
 
-* code.coding[serviceTypeId].system = "$service-type-id"
+* code.coding[serviceTypeId].system = "http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/service-type-id"
 * code.coding[serviceTypeId].system ^short = "Type of identifersystem for service type."
 * code.coding[serviceTypeId].code ^short = "Code for service type as recceived from sourcesystem. e.g primary key in db"
-
 
 * code.coding[serviceType].system = Canonical(CSServiceType)
 * code.coding[serviceType].system ^short = "Coding system for service type"
@@ -92,7 +89,47 @@ It answers the question: __“What service is the patient booking?”__
 * participant.role.text 0..1
 * participant.role.text ^short = "Text representation of the role"
 
-Invariant: ad-name-or-title
-Description: "At least one of name or title must be present."
-Severity: #error
-Expression: "name.exists() or title.exists()"
+
+
+* name 0..0
+
+// ---- Elements not used in this profile — restricted to 0..0 ----
+
+// ActivityDefinition fields not used
+
+* subtitle 0..0
+* experimental 0..0
+* subject[x] 0..0
+* date 0..0
+* publisher 0..0
+* contact 0..0
+* useContext 0..0
+* jurisdiction 0..0
+* purpose 0..0
+* usage 0..0
+* copyright 0..0
+* approvalDate 0..0
+* lastReviewDate 0..0
+* effectivePeriod 0..0
+* topic 0..0
+* author 0..0
+* editor 0..0
+* reviewer 0..0
+* endorser 0..0
+* relatedArtifact 0..0
+* library 0..0
+* kind 0..0
+* profile 0..0
+* intent 0..0
+* priority 0..0
+* doNotPerform 0..0
+* location 0..0
+* product[x] 0..0
+* quantity 0..0
+* dosage 0..0
+* bodySite 0..0
+* specimenRequirement 0..0
+* observationRequirement 0..0
+* observationResultRequirement 0..0
+* transform 0..0
+* dynamicValue 0..0

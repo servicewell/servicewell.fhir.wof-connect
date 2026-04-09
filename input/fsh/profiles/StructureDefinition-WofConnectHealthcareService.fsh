@@ -95,12 +95,27 @@ It answers the question: **'Where can the patient receive a service?'**
 * identifier insert Obligation($serverActor, #SHALL:populate)
 * location insert Obligation($serverActor, #SHALL:populate)
 
-Invariant: hcs-contained-location-required
-Description: "A contained Location must be present unless the service is marked as virtual."
-Severity: #error
-Expression: "
-characteristic.coding.where(code = 'virtual').exists()
-or
-contained.where($this is Location).exists()
-"
+// ---- Elements not used in this profile - restricted to 0..0 ----
 
+// Inherited from Resource / DomainResource
+
+
+// HealthcareService fields not used
+* active 0..0
+* category 0..0
+* type 0..0
+* specialty 0..0
+* comment 0..0
+* extraDetails 0..0
+* photo 0..0
+* coverageArea 0..0
+* serviceProvisionCode 0..0
+* eligibility 0..0
+* program 0..0
+* communication 0..0
+* referralMethod 0..0
+* appointmentRequired 0..0
+* availableTime 0..0
+* notAvailable 0..0
+* availabilityExceptions 0..0
+* endpoint 0..0

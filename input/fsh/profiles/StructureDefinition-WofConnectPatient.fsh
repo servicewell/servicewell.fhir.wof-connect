@@ -86,6 +86,22 @@ Description: "Patient returned by WOF Connect integrations."
 * telecom[email].system ^short = "Patient email address"
 * telecom insert Obligation($serverActor, #SHOULD:populate-if-known)
 
+// ---- Elements not used in this profile - restricted to 0..0 ----
+
+
+// Patient fields not used
+* gender 0..0
+* deceased[x] 0..0
+* address 0..0
+* maritalStatus 0..0
+* multipleBirth[x] 0..0
+* photo 0..0
+* contact 0..0
+* communication 0..0
+* generalPractitioner 0..0
+* managingOrganization 0..0
+* link 0..0
+
 
 * extension contains PortalConsentToMarketing named consentToMarketing 0..1 MS
 * extension[consentToMarketing] insert Obligation($serverActor, #SHOULD:populate)

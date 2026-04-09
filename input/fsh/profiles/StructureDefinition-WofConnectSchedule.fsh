@@ -85,8 +85,15 @@ It answers the question: __“Who is working in the coming weeks, and who can po
 
 * actor[healthcareService] insert Obligation($serverActor, #MAY:able-to-populate)
 
+// ---- Elements not used in this profile - restricted to 0..0 ----
 
-Invariant: inv-schedule-planning
-Description: "planningHorizon.start must be on or before planningHorizon.end"
-Severity: #error
-Expression: "start <= end"
+
+// Schedule fields not used
+* identifier 0..0
+* active 0..0
+* serviceCategory 0..0
+* specialty 0..0
+* comment 0..0
+
+
+

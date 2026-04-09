@@ -34,7 +34,26 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 * participant.actor 1..1
 * participant.status 1..1
 
-Invariant: wof-booked-status
-Description: "Booked Appointment.status must be one of booked, cancelled, or fulfilled."
-Severity: #error
-Expression: "status = 'booked' or status = 'cancelled' or status = 'fulfilled'"
+
+// ---- Elements not used in this profile — restricted to 0..0 ----
+
+// Inherited from Resource / DomainResource
+
+* modifierExtension 0..0
+
+
+// Appointment fields not used
+* cancelationReason 0..0
+* serviceCategory 0..0
+* specialty 0..0
+* appointmentType 0..0
+* reasonReference 0..0
+* priority 0..0
+* description 0..0
+* supportingInformation 0..0
+* minutesDuration 0..0
+* slot 0..0
+* created 0..0
+* comment 0..0
+* patientInstruction 0..0
+* basedOn 0..0

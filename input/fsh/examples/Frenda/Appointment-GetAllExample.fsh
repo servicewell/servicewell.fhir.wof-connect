@@ -41,7 +41,6 @@ Usage: #inline
 * extension[=].extension[=].valueBoolean = false
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* description = "Akut"
 * start = "2025-12-05T08:00:00+00:00"
 * end = "2025-12-05T08:30:00Z"
 * requestedPeriod.start = "2025-12-05T08:00:00+00:00"
@@ -87,7 +86,6 @@ Usage: #inline
 * extension[=].extension[=].valueBoolean = false
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* description = "Akut"
 * start = "2025-12-05T08:00:00+00:00"
 * end = "2025-12-05T08:30:00Z"
 * requestedPeriod.start = "2025-12-05T08:00:00+00:00"
@@ -133,7 +131,6 @@ Usage: #inline
 * extension[=].extension[=].valueBoolean = false
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* description = "Akut"
 * start = "2025-12-05T08:00:00+00:00"
 * end = "2025-12-05T08:30:00Z"
 * requestedPeriod.start = "2025-12-05T08:00:00+00:00"

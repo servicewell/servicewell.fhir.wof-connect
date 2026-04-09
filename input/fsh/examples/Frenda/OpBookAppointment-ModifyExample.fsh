@@ -38,7 +38,6 @@ Usage: #inline
 * extension[=].extension[=].valueBoolean = true
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
-* description = "Akut"
 * start = "2026-02-12T09:00:00Z"
 * end = "2026-02-12T09:30:00Z"
 * requestedPeriod.start = "2026-02-12T09:00:00Z"

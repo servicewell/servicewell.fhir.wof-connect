@@ -30,7 +30,6 @@ Usage: #example
 * serviceType = $service-type-id#4e10ed9b-814e-41c9-999f-3866de9d5343 "Akuttid för barnpatienter."
 * serviceType.text = "Akuttid för barnpatienter."
 //* status = #booked //data från frenda visar #booked
-* description = "Akut"
 * start = "2026-02-12T08:00:00Z"
 * end = "2026-02-12T08:30:00Z"
 * requestedPeriod.start = "2026-02-12T08:00:00Z"

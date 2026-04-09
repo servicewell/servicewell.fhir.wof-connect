@@ -45,3 +45,15 @@ Description: "Practitioner resource as exposed by WOF Connect integrations."
 * name insert Obligation($serverActor, #SHALL:populate)
 * active insert Obligation($serverActor, #SHALL:populate)
 
+// ---- Elements not used in this profile - restricted to 0..0 ----
+
+
+// Practitioner fields not used
+* telecom 0..0
+* address 0..0
+* gender 0..0
+* birthDate 0..0
+* photo 0..0
+* qualification 0..0
+* communication 0..0
+

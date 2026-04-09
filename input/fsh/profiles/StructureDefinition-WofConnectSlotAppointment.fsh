@@ -31,8 +31,23 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 * participant.actor 1..1
 * participant.status 1..1
 
-// Enforce SlotId identifier via invariant
-Invariant: wof-slot-identifier
-Description: "A slot-derived Appointment SHALL include an identifier with the SlotId system and a value."
-Severity: #error
-Expression: "identifier.where(system = 'http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/slot-id' and value.exists()).exists()"
+// ---- Elements not used in this profile - restricted to 0..0 ----
+
+
+// Appointment fields not used
+* cancelationReason 0..0
+* serviceCategory 0..0
+* specialty 0..0
+* appointmentType 0..0
+* reasonCode 0..0
+* reasonReference 0..0
+* priority 0..0
+* description 0..0
+* supportingInformation 0..0
+* minutesDuration 0..0
+* slot 0..0
+* created 0..0
+* comment 0..0
+* patientInstruction 0..0
+* basedOn 0..0
+
