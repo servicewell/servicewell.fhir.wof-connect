@@ -8,7 +8,7 @@ Description: "Allowed identifier.system values for national personal numbers use
 
 * #urn:oid:2.16.578.1.12.4.1.4.1 "Norwegian National Identity Number (assigned to residents registered in the National Population Register)"
 * #urn:oid:2.16.578.1.12.4.1.4.2 "Norwegian Temporary Identity Number (D-number)"
-* #urn:oid:2.16.578.1.12.4.1.4.3 "Norwegian Healthcare Identity Number (H-number)"
+* #urn:oid:2.16.578.1.12.4.1.4.3 "Norwegian FellesHjelpenummer (H-number)" "The norwegian felles hjelpenummer is a 11-digit number containing two control digits. The number shoud only be used when the Fødselsnummer and D-number is unknown."
 * #urn:oid:2.16.578.1.12.4.1.4.4 "Norwegian Temporary Healthcare Identifier (FH-number)"
 * #urn:oid:2.16.578.1.12.4.1.4.5 "Norwegian Immigration Case Identifier (DUF-number)"
 * #urn:oid:1.2.752.129.2.1.3.1 "Swedish Personal Identity Number"
