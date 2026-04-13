@@ -20,26 +20,21 @@ It answers the question: **'Where can the patient receive a service?'**
 * id 1..1 MS
 * id ^short = "logical id for Wof Connect HealthcareService"
 
-* identifier 0..* MS
-* identifier ^short = "Identifier for the healthcare service"
-* identifier.system 1..1 MS
-* identifier.system ^short = "System that issued the identifier (e.g. hospital, government)"
-* identifier.value 1..1 MS
-* identifier.value ^short = "Value of the identifier"
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.rules = #closed
+* identifier ^slicing.ordered = false
 
-* identifier contains businessIdentifier 0..1 MS
-* identifier[businessIdentifier].type.coding.code = #RI
-* identifier[businessIdentifier].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier contains
+    hsaIdentifier 0..1 MS
 
-* identifier[businessIdentifier].system 1..1
-* identifier[businessIdentifier].system ^short = "The source system. Shall correspond with meta.tag where system = http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/pms-system"
-* identifier[businessIdentifier].value 1..1
+* identifier[hsaIdentifier].value 1..1 MS
+* identifier[hsaIdentifier].system 1..1 MS
+* identifier[hsaIdentifier].system = "urn:oid:1.2.752.129.2.1.4.1"
+
+
 * providedBy 1..1 MS
 * providedBy ^short = "Organization that provides the healthcare service"
-* providedBy only Reference
 * providedBy.display 1..1 MS
 * providedBy.display ^short = "Name of the organization that provides the healthcare service"
 
@@ -65,12 +60,11 @@ It answers the question: **'Where can the patient receive a service?'**
 
 * contained 0..* MS
 * contained ^short = "Resources contained within the healthcare service resource"
-* contained only Location or Organization
 
 * characteristic 0..* MS
 
 * characteristic ^slicing.discriminator.type = #pattern
-* characteristic ^slicing.discriminator.path = "coding.system"
+* characteristic ^slicing.discriminator.path = "coding.code"
 * characteristic ^slicing.rules = #open
 
 * characteristic contains
@@ -80,6 +74,7 @@ It answers the question: **'Where can the patient receive a service?'**
 * characteristic[codeCharacteristic].coding 1..1 MS
 * characteristic[codeCharacteristic].coding ^short = "Coded characteristic of the healthcare service"
 * characteristic[codeCharacteristic].coding.system 1..1 MS
+
 * characteristic[codeCharacteristic].coding.system ^short = "System that defines the coded characteristic"
 * characteristic[codeCharacteristic].coding.code 1..1 MS
 * characteristic[codeCharacteristic].coding.code ^short = "Code that defines the coded characteristic"
@@ -88,6 +83,8 @@ It answers the question: **'Where can the patient receive a service?'**
 
 * characteristic[scheduleCharacteristic].coding 1..*
 * characteristic[scheduleCharacteristic].coding ^short = "Coded schedule characteristic of the healthcare service"
+* characteristic[scheduleCharacteristic].coding.system = Canonical(WCCharacteristic)
+* characteristic[scheduleCharacteristic].coding.code from VsWCCharacteristic
 
 * id insert Obligation($serverActor, #SHALL:populate)
 * name insert Obligation($serverActor, #SHALL:populate)

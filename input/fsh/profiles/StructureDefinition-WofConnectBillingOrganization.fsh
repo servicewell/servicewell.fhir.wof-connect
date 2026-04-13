@@ -21,7 +21,6 @@ It answers the question: "Who owns invoicing, customer accounts, and statutory r
 
 * name insert Obligation($serverActor, #SHOULD:populate)
 
-* identifier 1..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -31,7 +30,7 @@ It answers the question: "Who owns invoicing, customer accounts, and statutory r
 * identifier[hsaIdentifier].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 
 * identifier[hsaIdentifier].system 1..1
-* identifier[hsaIdentifier].system ^short = "The source system. Shall correspond with meta.tag where system = http://canonical.fhir.link/servicewell/wof-connect/CodeSystem/pms-system"
+* identifier[hsaIdentifier].system = "urn:oid:1.2.752.129.2.1.4.1"
 * identifier[hsaIdentifier].value 1..1
 
 * telecom 0..*

@@ -33,7 +33,6 @@ It answers the question: "What service is the patient booking?"
 * code ^short = "Service type being offered"
 * code.coding 1..* MS
 * code.coding ^short = "Service type coding"
-* code.coding.code 1..1 MS
 
 
 * code.coding ^slicing.discriminator.type = #value
@@ -47,10 +46,12 @@ It answers the question: "What service is the patient booking?"
 * code.coding[serviceTypeId].system = "http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/service-type-id"
 * code.coding[serviceTypeId].system ^short = "Type of identifersystem for service type."
 * code.coding[serviceTypeId].code ^short = "Code for service type as recceived from sourcesystem. e.g primary key in db"
+* code.coding[serviceTypeId].code 1..1 MS
 
 * code.coding[serviceType].system = Canonical(CSServiceType)
 * code.coding[serviceType].system ^short = "Coding system for service type"
 * code.coding[serviceType].code ^short = "Service type code"
+* code.coding[serviceType].code 1..1
 
 * code.coding.display 0..1
 * code.coding.display ^short = "Display for the service type code"
@@ -58,6 +59,8 @@ It answers the question: "What service is the patient booking?"
 * code.text ^short = "Text representation of the service type"
 
 * timing[x] insert Obligation($serverActor, #SHOULD:populate-if-known)
+* timing[x] only Duration
+* timingDuration.comparator 0..0 
 * timingDuration 0..1 MS
 * timingDuration ^short = "Duration in minutes"
 * timingDuration.value 1..1 MS
@@ -82,7 +85,7 @@ It answers the question: "What service is the patient booking?"
 * participant.role.coding.system 1..1 MS
 * participant.role.coding.system ^short = "Coding system for role"
 * participant.role.coding.code 1..1 MS
-* participant.role.coding.code ^short = "Role code"
+* participant.role.coding.code from VsPractitionerRole
 * participant.role.coding.display 0..1
 * participant.role.coding.display ^short = "Display for the role code"
 * participant.role.coding.system = $csPractitionerRole 
@@ -90,13 +93,25 @@ It answers the question: "What service is the patient booking?"
 * participant.role.text ^short = "Text representation of the role"
 
 
+* contained ^slicing.discriminator.type = #type
+* contained ^slicing.discriminator.path = "this"
+* contained ^slicing.rules = #closed
+* contained ^slicing.description = ""
+* contained ^slicing.ordered = true
 
-* name 0..0
+* contained contains healthcareServiceList 1..1 MS
+* contained[healthcareServiceList] ^short = "Resources contained within the activity definition resource"
+* contained[healthcareServiceList] insert Obligation($serverActor, #SHALL:populate) 
+* contained[healthcareServiceList] only WofConnectHealthcareServiceList
+* contained[healthcareServiceList].meta.profile = "http://canonical.fhir.link/servicewell/wof-connect/StructureDefinition/wof-connect-healthcareservice-list"
+
 
 // ---- Elements not used in this profile — restricted to 0..0 ----
 
 // ActivityDefinition fields not used
 
+
+* name 0..0
 * subtitle 0..0
 * experimental 0..0
 * subject[x] 0..0
