@@ -41,8 +41,6 @@ Description: "Standard base data (meta and data wrapper) captured with each extr
 * meta.interactionLevel ^example[=].valueString = "instance"
 
 * meta.extension 0..0 Extension "Extensions are not allowed in extraction metadata."
-* meta.modifierExtension 0..0 Extension "Modifier extensions are not allowed in extraction metadata."
 * meta.FhirQueryParam.extension 0..0 Extension "Extensions are not allowed on query parameter rows."
-* meta.FhirQueryParam.modifierExtension 0..0 Extension "Modifier extensions are not allowed on query parameter rows."
 
 * data 1..1 BackboneElement "Wrapper for data."
