@@ -21,6 +21,8 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 * end 1..1
 * requestedPeriod 1..1
 
+* description 0..1
+
 // Extension slicing
 * extension 2..*
 * extension contains
@@ -49,7 +51,6 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 * appointmentType 0..0
 * reasonReference 0..0
 * priority 0..0
-* description 0..0
 * supportingInformation 0..0
 * minutesDuration 0..0
 * slot 0..0
