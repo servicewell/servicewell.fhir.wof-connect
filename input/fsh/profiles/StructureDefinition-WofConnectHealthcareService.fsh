@@ -54,6 +54,8 @@ It answers the question: **'Where can the patient receive a service?'**
 * telecom[phone].system = #phone
 * telecom[email].system = #email
 
+* active 0..1
+
 * location 1..* MS
 * location ^short = "Location where the healthcare service is provided"
 * location only Reference(Location)
@@ -98,7 +100,7 @@ It answers the question: **'Where can the patient receive a service?'**
 
 
 // HealthcareService fields not used
-* active 0..0
+
 * category 0..0
 * type 0..0
 * specialty 0..0
