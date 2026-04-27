@@ -27,22 +27,21 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 // Attach invariant
 * obeys wof-slot-identifier
 
-* participant 2..2
 
-* participant ^slicing.discriminator.type = #type
-* participant ^slicing.discriminator.path = "actor"
+* participant ^slicing.discriminator.type = #profile
+* participant ^slicing.discriminator.path = "actor.resolve()"
 * participant ^slicing.rules = #open
 * participant ^slicing.description = ""
 * participant ^slicing.ordered = false
 
 * participant contains healthcareService 1..1 and practitionerRole 1..1
 * participant[healthcareService].actor only Reference(WofConnectHealthcareService)
+* participant[healthcareService].actor 1..1
+* participant[healthcareService].status 1..1
+
 * participant[practitionerRole].actor only Reference(WofConnectPractitionerRole)
-
-
-
-* participant.actor 1..1
-* participant.status 1..1
+* participant[practitionerRole].actor 1..1
+* participant[practitionerRole].status 1..1
 
 // ---- Elements not used in this profile - restricted to 0..0 ----
 
