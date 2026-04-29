@@ -1,7 +1,7 @@
-Profile: WofConnectBookingAppointment
+Profile: WofConnectBookedAppointment
 Parent: ihe-sched-appt // IHE ITI Appointment Profile
-Id: wof-connect-booking-appointment
-Title: "Wof Connect Booking Appointment"
+Id: wof-connect-booked-appointment
+Title: "Wof Connect Booked Appointment"
 Description: "Appointment representation of a booked visit. Inherits IHE Scheduling Appointment."
 * ^status = #active
 
