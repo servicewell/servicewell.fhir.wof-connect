@@ -40,6 +40,8 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 * participant[healthcareService].status 1..1
 
 * participant[practitionerRole].actor only Reference(WofConnectPractitionerRole)
+* participant[practitionerRole].actor 1..1
+* participant[practitionerRole].status 1..1
 
 * supportingInformation ^slicing.discriminator.type = #value
 * supportingInformation ^slicing.discriminator.path = "$this"
