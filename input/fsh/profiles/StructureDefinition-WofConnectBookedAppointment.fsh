@@ -1,7 +1,7 @@
 Profile: WofConnectBookingAppointment
 Parent: ihe-sched-appt // IHE ITI Appointment Profile
 Id: wof-connect-booking-appointment
-Title: "Wof Connect Booking Appointment"
+Title: "Wof Connect Booked Appointment"
 Description: "Appointment representation of a booked visit. Inherits IHE Scheduling Appointment."
 * ^status = #active
 
@@ -49,9 +49,20 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 * reasonCode 0..*
 * reasonCode.text 0..1
 
-* participant 2..3
-* participant.actor 1..1
-* participant.status 1..1
+* participant ^slicing.discriminator.type = #type
+* participant ^slicing.discriminator.path = "actor"
+* participant ^slicing.rules = #open
+* participant ^slicing.description = ""
+* participant ^slicing.ordered = false
+
+* participant contains healthcareService 1..1 MS and practitionerRole 1..1 MS and patient 1..1 MS
+* participant[healthcareService].actor only Reference(WofConnectHealthcareService)
+* participant[healthcareService].status 1..1
+* participant[practitionerRole].actor only Reference(WofConnectPractitionerRole)
+* participant[practitionerRole].status 1..1
+* participant[patient].actor only Reference(Patient)
+* participant[patient].status 1..1
+
 
 
 // ---- Elements not used in this profile — restricted to 0..0 ----
@@ -68,7 +79,6 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 * appointmentType 0..0
 * reasonReference 0..0
 * priority 0..0
-* supportingInformation 0..0
 * minutesDuration 0..0
 * slot 0..0
 * created 0..0

@@ -34,7 +34,7 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 * participant ^slicing.description = ""
 * participant ^slicing.ordered = false
 
-* participant contains healthcareService 1..1 and practitionerRole 1..1
+* participant contains healthcareService 1..1 MS and practitionerRole 1..1 MS
 * participant[healthcareService].actor only Reference(WofConnectHealthcareService)
 * participant[healthcareService].actor 1..1
 * participant[healthcareService].status 1..1
@@ -74,7 +74,6 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 * reasonReference 0..0
 * priority 0..0
 * description 0..0
-* supportingInformation 0..0
 * minutesDuration 0..0
 * slot 0..0
 * created 0..0
