@@ -1,4 +1,4 @@
-Profile: WofConnectBookedAppointment
+Profile: WofConnectBookingAppointment
 Parent: ihe-sched-appt // IHE ITI Appointment Profile
 Id: wof-connect-booking-appointment
 Title: "Wof Connect Booked Appointment"
