@@ -1,7 +1,7 @@
 Profile: WofConnectAppointment
 Parent: ihe-sched-appt // IHE ITI Appointment Profile
 Id: wof-connect-appointment
-Title: "Wof Connect Appointment"
+Title: "Wof Connect available Appointment"
 Description: "Representation of an available appointment. Inherits IHE Scheduling Appointment."
 * ^status = #active
 
@@ -45,7 +45,18 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 
 // ---- Elements not used in this profile - restricted to 0..0 ----
 
+* supportingInformation ^slicing.discriminator.type = #type
+* supportingInformation ^slicing.discriminator.path = "$this"
+* supportingInformation ^slicing.rules = #open
+* supportingInformation ^slicing.description = ""
+* supportingInformation ^slicing.ordered = false
 
+
+* supportingInformation contains billingOrganizationID 0..1 MS
+
+* supportingInformation[billingOrganizationID].reference 0..0
+* supportingInformation[billingOrganizationID].identifier.value 1..1 MS
+* supportingInformation[billingOrganizationID].identifier.use 0..0
 // Appointment fields not used
 * cancelationReason 0..0
 * serviceCategory 0..0
