@@ -17,6 +17,23 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 * serviceType.coding.system 1..1
 * serviceType.coding.code 1..1
 
+* supportingInformation ^slicing.discriminator.type = #value
+* supportingInformation ^slicing.discriminator.path = "$this"
+* supportingInformation ^slicing.rules = #open
+* supportingInformation ^slicing.description = ""
+* supportingInformation ^slicing.ordered = false
+
+* supportingInformation contains deviceId 0..1 MS
+* supportingInformation[deviceId] ^short = "Identifies the chair or treatment unit required for the booking when a specific device must be used."
+* supportingInformation[deviceId] ^definition = "Used when the appointment must be booked against a specific chair or treatment unit. If the practitioner is tied to a specific chair at the time of booking, this information shall be included here. The identifier.value is a logical reference to the unique identifier of that chair or treatment unit."
+
+* supportingInformation[deviceId].identifier.value 1..1 MS
+* supportingInformation[deviceId].identifier.value ^short = "Logical reference to the unique identifier of the required chair or treatment unit."
+* supportingInformation[deviceId].identifier.value ^definition = "The logical reference to the unique identifier of the chair or treatment unit that must be used for the appointment booking."
+* supportingInformation[deviceId].identifier.use 0..0
+* supportingInformation[deviceId].reference 0..0
+* supportingInformation[deviceId].display 0..0
+
 * start 1..1
 * end 1..1
 * requestedPeriod 1..1
