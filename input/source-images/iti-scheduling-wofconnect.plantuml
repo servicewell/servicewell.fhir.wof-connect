@@ -139,8 +139,8 @@ note right #C8E6C9
   └ «WofConnectBookingAppointment»
     profiles: **ihe-sched-appt**
     status = **booked** | **cancelled** | **fulfilled**
-    + ext: «WofConnectCharacteristic»
-    + ext: «WofConnectAppointmentUpdate»
+    + ext: «WofBaseCharacteristic»
+    + ext: «WofBaseAppointmentUpdate»
       (canBeRescheduled, canBeCancelled,
        webReschedulingCount)
     + serviceType, start, end
