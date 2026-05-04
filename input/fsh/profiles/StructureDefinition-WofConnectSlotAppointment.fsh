@@ -1,7 +1,7 @@
 Profile: WofConnectAppointment
 Parent: ihe-sched-appt // IHE ITI Appointment Profile
 Id: wof-connect-appointment
-Title: "Wof Connect available Appointment"
+Title: "Wof Connect Available Appointment"
 Description: "Representation of an available appointment. Inherits IHE Scheduling Appointment."
 * ^status = #active
 
