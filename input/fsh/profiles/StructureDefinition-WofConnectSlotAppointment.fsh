@@ -34,11 +34,16 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 * participant ^slicing.description = ""
 * participant ^slicing.ordered = false
 
-* participant contains healthcareService 1..1 MS and practitionerRole 1..1 MS
+* participant contains healthcareService 0..1 MS and practitionerRole 0..1 MS and practitioner 0..1 MS
 * participant[healthcareService].actor only Reference(WofConnectHealthcareService)
 * participant[healthcareService].actor 1..1
 * participant[healthcareService].status 1..1
 
+* participant[practitioner].actor only Reference(WofConnectPractitioner)
+* participant[practitioner].actor 1..1
+* participant[practitioner].status 1..1
+
+* participant[practitionerRole] ^short = "PractitionerRole must be present if either one of healthcareService or practitioner is absent"
 * participant[practitionerRole].actor only Reference(WofConnectPractitionerRole)
 * participant[practitionerRole].actor 1..1
 * participant[practitionerRole].status 1..1
