@@ -55,6 +55,8 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 * supportingInformation contains billingOrganizationID 0..1 MS
 * supportingInformation[billingOrganizationID] ^short = "Identifier for the organization responsible for billing, only used when this information is not available through participant (healthcareService)"
 * supportingInformation[billingOrganizationID] ^definition = "Optional supporting information used to carry the billing organization identifier for the appointment, when this is not available through healthcareService. The reference element is not used; only identifier.value is expected."
+* supportingInformation[billingOrganizationID].identifier.system ^short = "The source system for the billing organization identifier"
+
 
 * supportingInformation[billingOrganizationID].reference 0..0
 * supportingInformation[billingOrganizationID].identifier.value 1..1 MS
