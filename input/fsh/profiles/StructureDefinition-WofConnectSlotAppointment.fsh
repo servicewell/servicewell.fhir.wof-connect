@@ -58,6 +58,7 @@ Description: "Representation of an available appointment. Inherits IHE Schedulin
 
 * supportingInformation[billingOrganizationID].reference 0..0
 * supportingInformation[billingOrganizationID].identifier.value 1..1 MS
+* supportingInformation[billingOrganizationID].identifier.system 1..1 MS
 * supportingInformation[billingOrganizationID].identifier.use 0..0
 // Appointment fields not used
 * cancelationReason 0..0
