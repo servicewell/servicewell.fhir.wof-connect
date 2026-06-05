@@ -86,7 +86,7 @@ It answers the question: **'Where can the patient receive a service?'**
 * characteristic[scheduleCharacteristic].coding 1..*
 * characteristic[scheduleCharacteristic].coding ^short = "Coded schedule characteristic of the healthcare service"
 * characteristic[scheduleCharacteristic].coding.system = Canonical(WCCharacteristic)
-* characteristic[scheduleCharacteristic].coding.code from VsWCCharacteristic
+* characteristic[scheduleCharacteristic].coding.code from VsWCCharacteristicSchedule
 
 * id insert Obligation($serverActor, #SHALL:populate)
 * name insert Obligation($serverActor, #SHALL:populate)

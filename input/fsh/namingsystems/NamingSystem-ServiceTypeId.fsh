@@ -13,7 +13,7 @@ Usage: #definition
 * kind = #codesystem
 * date = "2025-10-30"
 * publisher = "Service Well AB"
-* usage = "Used in WofConnect to identify ActivityDefinition ServiceType in case of an identifier example Treatment.Id as a code system in FHIR resources"
+* usage = "Used in WofConnect to identify ActivityDefinition ServiceType in case of an identifier. Example: Treatment.Id as a code system in FHIR resources"
 * jurisdiction = urn:iso:std:iso:3166#SE "Sweden"
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "http://canonical.fhir.link/servicewell/wof-connect/identifiercodesystem/service-type-id"

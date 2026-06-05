@@ -48,10 +48,7 @@ It answers the question: "What service is the patient booking?"
 * code.coding[serviceTypeId].code ^short = "Code for service type as recceived from sourcesystem. e.g primary key in db"
 * code.coding[serviceTypeId].code 1..1 MS
 
-* code.coding[serviceType].system = Canonical(CSServiceType)
-* code.coding[serviceType].system ^short = "Coding system for service type"
-* code.coding[serviceType].code ^short = "Service type code"
-* code.coding[serviceType].code 1..1
+
 
 * code.coding.display 0..1
 * code.coding.display ^short = "Display for the service type code"

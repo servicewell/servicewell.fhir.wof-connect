@@ -28,7 +28,7 @@ dependencies:
   ihe.iti.scheduling: 1.0.0
   hl7.terminology.r4: 7.0.0
   hl7.fhir.uv.extensions.r4: 5.2.0
-#
+  servicewell.fhir.wof-base: dev
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in

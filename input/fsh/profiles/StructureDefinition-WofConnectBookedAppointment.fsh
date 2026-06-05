@@ -26,8 +26,8 @@ Description: "Appointment representation of a booked visit. Inherits IHE Schedul
 // Extension slicing
 * extension 2..*
 * extension contains
-    WofConnectCharacteristic named characteristic 1..1 and
-    WofConnectAppointmentUpdate named appointmentUpdate 1..1
+    Characteristic named characteristic 1..1 and
+    AppointmentUpdate named appointmentUpdate 1..1
 
 * reasonCode 0..*
 * reasonCode.text 0..1
