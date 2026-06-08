@@ -55,7 +55,7 @@ Description: "Patient returned by WOF Connect integrations."
 * identifier[personalNumber].system 1..1
 * identifier[personalNumber].system from WofPersonalNumberSystemVS (extensible)
 * identifier[personalNumber].system ^short = "System that issued the personal number"
-* identifier[personalNumber].system ^comment = "see (url till namingsystem)"
+* identifier[personalNumber].system ^comment = "see (url for namingsystem)"
 * active 0..1 MS
 * active ^short = "Whether the patient record is active or not"
 
